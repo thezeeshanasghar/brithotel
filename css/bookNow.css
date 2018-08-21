@@ -1,0 +1,2076 @@
+@font-face {
+    font-family: monsBlack;
+    src: url("../customFonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: monsRegular;
+    src: url("../customFonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: monsMedium;
+    src: url("../customFonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: monsSemiBold;
+    src: url("../customFonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: monsLight;
+    src: url("../customFonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: monsThin;
+    src: url("../customFonts/Montserrat-Thin.ttf");
+}
+
+body {
+    font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #eeeeee;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+
+.main-padding {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.gbtn {
+    background: #6a6a69;
+    padding: 10px 7px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.gbtn img {
+    width: 21px;
+    height: 21px;
+    margin-left: 15px;
+}
+
+.gbtn:hover {}
+
+
+/* Heading */
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: grey;
+    /* color: #000; */
+    letter-spacing: 5px;
+    padding-bottom: 40px;
+}
+
+
+/*Overlay Manu*/
+
+.overlay {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 1.0);
+    display: none;
+}
+
+.overlay a {}
+
+.overlay a i {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 50px;
+    color: white;
+}
+
+.overlay .overlay-content {}
+
+.overlay .overlay-content ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 12%;
+    margin: 0;
+}
+
+.overlay .overlay-content ul li {
+    width: 100%;
+    float: left;
+}
+
+.overlay .overlay-content ul li a {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.overlay .overlay-content ul li a:hover {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/*overlay-main-menu*/
+
+.overlay .overlay-main-menu {
+    background-color: rgba(50, 50, 50, 1.0);
+    float: left;
+    width: 100%;
+}
+
+.overlay .overlay-main-menu .overlay-brand {
+    float: left;
+    width: 90%;
+}
+
+.overlay .overlay-main-menu .overlay-brand img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.overlay .overlay-main-menu .overlay-brand h3 {
+    float: left;
+    width: 70%;
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 22px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 8px;
+}
+
+.overlay .overlay-main-menu .overlay-menu-items {
+    float: right;
+    width: 5%;
+}
+
+.overlay .overlay-main-menu .overlay-menu-items a {
+    text-align: center;
+    float: right;
+    width: 100%;
+    padding: 9px 0px;
+    background-color: grey;
+    border-left: 1px solid black;
+}
+
+.overlay .overlay-main-menu .overlay-menu-items a .overlay-top {
+    text-align: center;
+}
+
+.overlay .overlay-main-menu .overlay-menu-items a .overlay-top p {
+    margin: 0;
+    font-size: 7px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.overlay .overlay-main-menu .overlay-menu-items a .overlay-bottom {}
+
+.overlay .overlay-main-menu .overlay-menu-items a .overlay-bottom span {
+    font-size: 29px;
+    font-weight: normal;
+    color: white;
+    padding: 0;
+}
+
+.overlay-footer {
+    float: left;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.overlay-footer ul {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 100px 525px;
+    list-style: none;
+    color: white;
+    font-weight: 900;
+}
+
+.overlay-footer ul li {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+.overlay-footer ul li a {}
+
+
+/* NavBar */
+
+.main-menu {
+    float: left;
+    width: 100%;
+    background: #2b2b2b;
+    position: fixed;
+    z-index: 200;
+}
+
+.main-menu .logo {
+    float: left;
+    width: 100%;
+}
+
+.main-menu .logo img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.main-menu .logo h3 {
+    float: left;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 8px;
+    color: lightgrey;
+    font-size: 12px;
+    /* margin: auto; */
+    padding: 22px;
+    /* margin-left: 6px; */
+    /* margin-top: 18px; */
+}
+
+.main-menu .menu-items {
+    float: left;
+    width: 100%;
+}
+
+.main-menu .menu-items ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.main-menu .menu-items ul li {
+    list-style-type: none;
+    float: left;
+    border-right: solid 1px #000;
+}
+
+.main-menu .menu-items ul li:first-child {
+    border-left: solid 1px #000;
+}
+
+.main-menu .menu-items ul li a {
+    display: block;
+    padding: 15px 47px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-menu .menu-items ul li a:hover {
+    display: block;
+    padding: 15px 47px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #cccccc;
+    color: black;
+}
+
+.main-menu .menu-items ul li a i {}
+
+.main-menu .menu-items ul li a img {
+    width: 52px !important;
+    padding: 0px 11px;
+}
+
+.main-menu .menu-items ul li a .m-icon {
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.main-menu .menu-items ul li.l-list {
+    text-align: center;
+}
+
+.main-menu .menu-items ul li.l-list a {
+    background: #585859;
+    padding: 12px 25px;
+}
+
+.main-menu .menu-items ul li.l-list a .top {
+    font-size: 6px;
+}
+
+.main-menu .menu-items ul li.l-list a .btm {}
+
+.main-menu .menu-items ul li.l-list a .btm i {
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* Hotel Information */
+
+.hotel-info {}
+
+.hotel-info .single-hotel {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.hotel-info .single-hotel .h-image {
+    float: left;
+    width: 50%;
+}
+
+.hotel-info .single-hotel .h-image img {
+    width: 100%;
+}
+
+.hotel-info .single-hotel .h-detail {
+    color: #000;
+    float: left;
+    width: 50%;
+    padding: 25px 0px;
+    padding-left: 50px;
+    background: #fff;
+}
+
+.hotel-info .single-hotel .h-detail .h-title {
+    font-size: 20px;
+    font-family: monsSemiBold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.hotel-info .single-hotel .h-detail .h-contact {
+    font-family: monsRegular;
+    color: #000;
+    margin: 18px 0;
+    color: grey;
+}
+
+.hotel-info .single-hotel .h-detail .h-contact ul {
+    padding: 0;
+    margin: 0;
+}
+
+.hotel-info .single-hotel .h-detail .h-contact ul li {
+    list-style-type: none;
+}
+
+.hotel-info .single-hotel .h-detail .h-btns {
+    float: left;
+    width: 100%;
+}
+
+.hotel-info .single-hotel .h-detail .h-btns ul {
+    padding: 0;
+    padding-top: 15px;
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+.hotel-info .single-hotel .h-detail .h-btns ul li {
+    text-shadow: 0 0 black;
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.hotel-info .single-hotel .h-detail .h-btns ul li a {
+    display: block;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 30px;
+}
+
+.hotel-info .single-hotel .h-detail .h-btns ul li a i {
+    padding-left: 12px;
+    font-size: 20px;
+}
+
+
+/* Discount info */
+
+.discount-info {
+    float: left;
+    width: 100%;
+    background-color: black;
+}
+
+.discount-info ul {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+.discount-info ul li {
+    background: #585859;
+    float: left;
+    width: 33.3%;
+    list-style-type: none;
+    padding: 70px 40px;
+    padding-bottom: 50px;
+}
+
+.discount-info ul li::after {
+    clear: both;
+}
+
+.discount-info ul li.drk {
+    background: #1d1d1d;
+}
+
+.discount-info ul li.m-gray {
+    background: #2b2b2b;
+}
+
+.discount-info ul li p {
+    font-size: 30px;
+    margin-bottom: 125px;
+}
+
+.discount-info ul li a {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+
+/* Short-info*/
+
+.short-info {
+    background-color: black;
+    float: left;
+    width: 100%;
+    padding: 150px 256px;
+}
+
+.short-info .container ul {
+    float: left;
+    width: 100%;
+    padding: 0px 150px;
+    margin-bottom: 0;
+}
+
+.short-info .container ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    list-style-type: none;
+    font-family: monsRegular;
+    text-transform: uppercase;
+}
+
+.short-info .container ul li a {
+    font-size: 44px;
+}
+
+.short-info .container ul li a img {
+    width: 50px;
+}
+
+.short-info .container ul li p {
+    font-size: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+.masthead {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 0 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.masthead .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.masthead .intro-body .intro-text {
+    font-size: 40px;
+    margin: 0;
+    padding: 90px 0px;
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+
+.masthead .intro-body img {
+    padding-top: 116px;
+}
+
+.masthead .intro-body p {}
+
+.masthead .intro-body a {
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.masthead .intro-body a p {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.masthead .intro-body a img {
+    padding: 0;
+}
+
+.masthead2 {
+    display: table;
+    width: 100%;
+    height: 150%;
+    padding: 0 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+    background: url("../img/airport.png") no-repeat bottom center scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.masthead2 .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+    width: 100%;
+}
+
+.masthead2 .intro-body .intro-text {
+    font-size: 35px;
+    text-align: left;
+    margin: 0;
+    float: left;
+    width: 30%;
+    padding-left: 80px;
+    padding-top: 80px;
+}
+
+.masthead2 .intro-body .intro-text-2 {
+    font-size: 35px;
+    text-align: left;
+    margin: 0;
+    width: 60%;
+    padding-top: 115px;
+    padding-left: 200px;
+}
+
+.masthead2 .intro-body img {
+    padding: 40px;
+}
+
+.masthead2 .intro-body p {}
+
+.masthead2 .intro-body a {
+    float: left;
+    width: 100%;
+}
+
+.masthead2 .intro-body a i {
+    position: absolute;
+    bottom: 8px;
+    color: white;
+    left: 47%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#map img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #262627;
+    color: lightgray;
+    padding: 25px 0;
+    clear: both;
+}
+
+footer .container-fluid {}
+
+footer .container-fluid .center-row {
+    float: left;
+    width: 100%;
+}
+
+footer .container-fluid .center-row ul {
+    padding: 0;
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+footer .container-fluid .center-row ul li {
+    list-style-type: none;
+    float: left;
+    padding: 0px 24px;
+}
+
+footer .container-fluid .center-row ul li a {}
+
+footer .container-fluid p,
+a {
+    font-family: monsLight;
+    color: lightgray;
+    font-size: 10px;
+    margin: 0;
+}
+
+
+/*Page Under Construction*/
+
+.under-construction {
+    width: 100%;
+    height: auto;
+}
+
+.under-construction h3 {
+    font-family: monsRegular;
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 65px 0px;
+}
+
+@media (max-width: 991px) {
+    /* Heading */
+    .main-menu {}
+    .main-menu .logo {}
+    .main-menu .logo img {
+        width: 36px !important;
+        height: 36px !important;
+    }
+    .main-menu .logo h3 {
+        padding: 16px 7px !important;
+    }
+    .main-menu .menu-items {
+        float: left !important;
+        width: 100% !important;
+    }
+    .main-menu .menu-items ul {}
+    .main-menu .menu-items ul li {}
+    .main-menu .menu-items ul li:first-child {}
+    .main-menu .menu-items ul li a {
+        font-size: 8px !important;
+        padding: 8px !important;
+    }
+    .main-menu .menu-items ul li a i {}
+    .main-menu .menu-items ul li a img {}
+    .main-menu .menu-items ul li a .m-icon {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .main-menu .menu-items ul li.l-list {}
+    .main-menu .menu-items ul li.l-list a {}
+    .main-menu .menu-items ul li.l-list a .top {
+        font-size: 8px;
+    }
+    .main-menu .menu-items ul li.l-list a .btm {}
+    .main-menu .menu-items ul li.l-list a .btm i {
+        font-size: 19px;
+    }
+    /* Hotel Information */
+    .hotel-info {}
+    .hotel-info .single-hotel {}
+    .hotel-info .single-hotel .h-image {}
+    .hotel-info .single-hotel .h-image img {}
+    .hotel-info .single-hotel .h-detail {
+        padding: 0px 0 !important;
+        padding-left: 10px !important;
+    }
+    .hotel-info .single-hotel .h-detail .h-title {
+        font-size: 18px;
+    }
+    .hotel-info .single-hotel .h-detail .h-contact {
+        margin: 7px 0 !important;
+    }
+    .hotel-info .single-hotel .h-detail .h-contact ul {}
+    .hotel-info .single-hotel .h-detail .h-contact ul li {
+        font-size: 14px;
+    }
+    .hotel-info .single-hotel .h-detail .h-btns {}
+    .hotel-info .single-hotel .h-detail .h-btns ul {}
+    .hotel-info .single-hotel .h-detail .h-btns ul li {}
+    .hotel-info .single-hotel .h-detail .h-btns ul li a {
+        padding: 6px 15px;
+    }
+    .hotel-info .single-hotel .h-detail .h-btns ul li a i {}
+    /* Discount info */
+    .discount-info {}
+    .discount-info ul {
+        float: left;
+        width: 100%;
+    }
+    .discount-info ul li {
+        padding: 50px 25px;
+        width: 33.3% !important;
+    }
+    .discount-info ul li.drk {}
+    .discount-info ul li.m-gray {}
+    .discount-info ul li p {
+        font-size: 26px;
+        margin-bottom: 70px;
+    }
+    .discount-info ul li a {}
+    /*Short info*/
+    .short-info {
+        background-color: black;
+        float: left;
+        width: 100%;
+        padding: 150px 50px;
+    }
+    .short-info .container ul {
+        padding: 0px 0px;
+    }
+    .short-info .container ul li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        list-style-type: none;
+        font-family: monsRegular;
+        text-transform: uppercase;
+    }
+    .short-info .container ul li a {
+        font-size: 44px;
+    }
+    .short-info .container ul li a img {
+        width: 60px !important;
+    }
+    .short-info .container ul li p {
+        font-size: 10px;
+        color: gray;
+        font-weight: bold;
+    }
+    /*Footer*/
+    footer {
+        background-color: #262627;
+        color: lightgray;
+        padding: 25px 0;
+        clear: both;
+    }
+    footer .container-fluid {}
+    footer .container-fluid .center-row {
+        float: left !important;
+        width: 100% !important;
+    }
+    footer .container-fluid .center-row ul {
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+        float: left !important;
+        width: 100% !important;
+    }
+    footer .container-fluid .center-row ul li:nth-child(1) {
+        float: left !important;
+        width: 22%;
+        text-align: center;
+        padding: 0 !important;
+    }
+    footer .container-fluid .center-row ul li:nth-child(2) {
+        float: left !important;
+        width: 34%;
+        text-align: center;
+        padding: 0 !important;
+    }
+    footer .container-fluid .center-row ul li:nth-child(3) {
+        float: left !important;
+        width: 22%;
+        text-align: center;
+        padding: 0 !important;
+    }
+    footer .container-fluid .center-row ul li:nth-child(4) {
+        float: left !important;
+        width: 22%;
+        text-align: center;
+        padding: 0 !important;
+    }
+    footer .container-fluid .center-row ul li a {}
+    footer .container-fluid p,
+    a {
+        font-family: monsLight;
+        color: lightgray;
+        font-size: 10px;
+        margin: 0;
+    }
+    .fix-button {}
+    .fix-button a {}
+    .fix-button a i {}
+    .fix-button p {}
+    .fix-button a:focus,
+    .fix-button a:hover {}
+    .masthead {
+        display: table;
+        width: 100%;
+        height: 40% !important;
+        padding: 0 0;
+        text-align: center;
+        color: white;
+        background-color: black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .masthead .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        padding-bottom: 0px;
+    }
+    .masthead .intro-body .intro-text {
+        font-size: 40px;
+        margin: 0;
+        padding: 90px 0px;
+        padding-top: 90px;
+        padding-bottom: 68px !important;
+    }
+    .masthead .intro-body img {
+        padding-top: 116px;
+    }
+    .masthead .intro-body p {}
+    .masthead .intro-body a {
+        float: left;
+        width: 100%;
+    }
+    .masthead .intro-body a p {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+    .masthead .intro-body a img {
+        padding: 0;
+    }
+    .masthead2 {
+        display: table;
+        width: 100%;
+        height: 48% !important;
+        padding: 0 0;
+        text-align: center;
+        color: white;
+        background-color: black;
+        background: url("../img/airport.png") no-repeat bottom center scroll;
+        position: relative;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .masthead2 .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        float: left;
+        width: 100%;
+    }
+    .masthead2 .intro-body .intro-text {
+        font-size: 35px;
+        text-align: center !important;
+        margin: 0;
+        float: left;
+        width: 100% !important;
+        padding-left: 0px !important;
+        padding-top: 80px;
+    }
+    .masthead2 .intro-body .intro-text-2 {
+        font-size: 35px;
+        text-align: center !important;
+        width: 100% !important;
+        padding-top: 115px;
+        padding-left: 0px !important;
+    }
+    .masthead2 .intro-body img {
+        padding: 40px;
+    }
+    .masthead2 .intro-body p {}
+    .masthead2 .intro-body a {
+        float: left;
+        width: 100%;
+    }
+    .masthead2 .intro-body a i {
+        position: absolute;
+        color: white;
+        left: 44%;
+    }
+    /*Maps*/
+    #map {
+        width: 100%;
+        height: 50%;
+    }
+    #map img {
+        width: 100%;
+        height: 100%;
+    }
+    .content-section {
+        margin-top: 0px !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: black;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+    }
+    .content-section img {
+        padding-bottom: 20px;
+    }
+    .content-section h6 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    .content-section p {
+        font-family: monsLight;
+        font-size: 8px;
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+        float: left;
+        width: 100%;
+        z-index: 999;
+        background: #2b2b2b;
+        bottom: 0;
+        position: fixed;
+        padding: 0px 0;
+    }
+    .mobile-menu .l-logo {
+        float: left;
+        width: 40%;
+    }
+    .mobile-menu .l-logo .logo {
+        float: left;
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 10px;
+    }
+    .mobile-menu .l-logo img {
+        width: 26px;
+        float: left;
+    }
+    .mobile-menu .l-logo h3 {
+        margin-bottom: 0;
+        font-size: 7px;
+        float: left;
+        width: 76%;
+        margin-top: 11px;
+        padding-left: 7px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        letter-spacing: 5px !important;
+    }
+    .mobile-menu .b-menu {
+        float: left;
+        width: 60%;
+    }
+    .mobile-menu .b-menu ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .mobile-menu .b-menu ul li {
+        list-style-type: none;
+        float: right;
+        border-right: 1px solid black;
+        padding: 0 5px;
+    }
+    .mobile-menu .b-menu ul li:last-child {
+        list-style-type: none;
+        float: right;
+        border-left: 1px solid black;
+        background-color: gray;
+    }
+    .mobile-menu .b-menu ul li:first-child {
+        list-style-type: none;
+        float: right;
+        border: none;
+    }
+    .mobile-menu .b-menu ul li a {
+        color: #fff;
+        display: block;
+        padding: 8px 5px;
+    }
+    .mobile-menu .b-menu ul li a img {
+        width: 24px;
+        padding-top: 8px;
+    }
+    .mobile-menu .b-menu ul li a i {
+        font-size: 30px;
+    }
+    .mobile-menu .b-menu ul li:hover i {}
+    /* Hotel Information */
+    .hotel-info {}
+    .hotel-info .single-hotel {}
+    .hotel-info .single-hotel .h-image {
+        width: 100%;
+    }
+    .hotel-info .single-hotel .h-image img {}
+    .hotel-info .single-hotel .h-detail {
+        width: 100%;
+        padding: 16px;
+    }
+    .hotel-info .single-hotel .h-detail .h-title {}
+    .hotel-info .single-hotel .h-detail .h-contact {}
+    .hotel-info .single-hotel .h-detail .h-contact ul {}
+    .hotel-info .single-hotel .h-detail .h-contact ul li {}
+    .hotel-info .single-hotel .h-detail .h-btns {}
+    .hotel-info .single-hotel .h-detail .h-btns ul {}
+    .hotel-info .single-hotel .h-detail .h-btns ul li {}
+    .hotel-info .single-hotel .h-detail .h-btns ul li a {}
+    .hotel-info .single-hotel .h-detail .h-btns ul li a i {}
+    /* Discount info */
+    .discount-info {}
+    .discount-info ul {}
+    .discount-info ul li {
+        width: 100% !important;
+        float: left;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+    .discount-info ul li.drk {
+        float: left;
+        width: 100% !important;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+    .discount-info ul li.m-gray {
+        margin-bottom: 20px;
+        float: left;
+        width: 100% !important;
+        padding: 10px 10px;
+    }
+    .discount-info ul li p {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .discount-info ul li a {}
+    /* Short-info*/
+    /*Short info*/
+    .short-info {
+        background-color: black;
+        float: left;
+        width: 100%;
+        padding: 60px 2px;
+    }
+    .short-info .container ul {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .short-info .container ul li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        list-style-type: none;
+        font-family: monsRegular;
+        text-transform: uppercase;
+    }
+    .short-info .container ul li a {
+        font-size: 44px;
+    }
+    .short-info .container ul li a img {
+        width: 40px !important;
+    }
+    .short-info .container ul li p {
+        font-size: 10px;
+        color: gray;
+        font-weight: bold;
+    }
+    /*Footer*/
+    footer {
+        background-color: #262627;
+        color: lightgray;
+        /* padding: 70px 0 !important; */
+        clear: both;
+        float: left;
+        width: 100%;
+        padding-bottom: 100px !important;
+    }
+    footer .container-fluid {}
+    footer .container-fluid .center-row {}
+    footer .container-fluid .center-row ul {
+        float: left !important;
+        width: 100% !important;
+        padding-bottom: 10px !important;
+    }
+    footer .container-fluid .center-row ul li:nth-child(1) {
+        list-style: none;
+        width: 22% !important;
+        text-align: center;
+    }
+    footer .container-fluid .center-row ul li:nth-child(2) {
+        list-style: none;
+        width: 34% !important;
+        text-align: center;
+    }
+    footer .container-fluid .center-row ul li:nth-child(3) {
+        list-style: none;
+        width: 22% !important;
+        text-align: center;
+    }
+    footer .container-fluid .center-row ul li:nth-child(4) {
+        list-style: none;
+        width: 22% !important;
+        text-align: center;
+    }
+    footer .container-fluid .center-row ul li a {
+        text-align: center;
+    }
+    footer .container-fluid p,
+    a {
+        font-family: monsLight;
+        color: lightgray;
+        /* font-size: 10px; */
+        margin: 0;
+        /* float: left; */
+        /* width: 100%; */
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .fix-button {
+        bottom: 50px !important;
+        right: 10px !important;
+    }
+    .fix-button a {
+        width: 40px !important;
+        height: 40px !important;
+        padding: 0;
+    }
+    .fix-button a i {}
+    .fix-button p {
+        display: none;
+    }
+    .fix-button a:focus,
+    .fix-button a:hover {}
+    /* Master Header */
+    .masthead {
+        display: table;
+        width: 100%;
+        height: 100%;
+        padding: 0 0;
+        text-align: center;
+        color: white;
+        background-color: black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .masthead .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .masthead .intro-body .intro-text {
+        font-size: 28px;
+        margin: 0;
+        padding: 90px 0px;
+        padding-top: 31px;
+        padding-bottom: 15px !important;
+    }
+    .masthead .intro-body img {
+        padding-top: 51px;
+    }
+    .masthead .intro-body p {}
+    .masthead .intro-body a {
+        float: left;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .masthead .intro-body a p {
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin: 0;
+        padding-bottom: 24px;
+    }
+    .masthead .intro-body a img {
+        padding: 0;
+    }
+    /* Master Header  */
+    .masthead2 {
+        display: table;
+        width: 100%;
+        height: 150%;
+        padding: 0 0;
+        text-align: center;
+        color: white;
+        background-color: black;
+        background: url("../img/airport.png") no-repeat bottom center scroll;
+        position: relative;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .masthead2 .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        float: left;
+        width: 100%;
+    }
+    .masthead2 .intro-body .intro-text {
+        font-size: 35px;
+        text-align: left;
+        margin: 0;
+        float: left;
+        width: 30%;
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+    .masthead2 .intro-body .intro-text-2 {
+        font-size: 35px;
+        text-align: left;
+        margin: 0;
+        width: 60%;
+        padding-top: 115px;
+        padding-left: 200px;
+    }
+    .masthead2 .intro-body img {
+        padding: 40px;
+    }
+    .masthead2 .intro-body p {}
+    .masthead2 .intro-body a {
+        float: left;
+        width: 100%;
+    }
+    .masthead2 .intro-body a i {
+        position: absolute;
+        bottom: 10px;
+        left: 38%;
+        color: white;
+    }
+    /* Maps*/
+    #map {
+        width: 100%;
+        height: 35%;
+    }
+    #map img {
+        width: 100%;
+        height: 100%;
+    }
+    .content-section {
+        margin-top: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: black;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+    }
+    .content-section img {
+        padding-bottom: 20px;
+    }
+    .content-section h6 {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+    .content-section p {
+        font-family: monsLight;
+        font-size: 8px;
+        font-weight: lighter;
+    }
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0 0 35px;
+    }
+}
+
+a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #42DCA3;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    /* color: #1d9b6c; */
+    color: white;
+}
+
+.sectionText {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: grey;
+}
+
+.hotels_Information {
+    padding-top: 20px;
+}
+
+.hotels_Information .imageContent {
+    margin: 0 auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+.hotels_Information .textContent {
+    background-color: #ffff;
+    height: auto;
+}
+
+.hotels_Information .textContent h6 {
+    letter-spacing: 5px;
+    color: black;
+}
+
+.hotels_Information .textContent p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: auto;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.textContentBox {
+    padding: 50px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    vertical-align: top;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel {
+    background-color: black;
+    padding: 70px 0px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
+
+.dark-grey {
+    height: 60vh;
+    background-color: #1a1a1a;
+}
+
+.medium-grey {
+    height: 60vh;
+    background-color: #343434;
+}
+
+.light-grey {
+    height: 60vh;
+    background-color: #4e4d4e;
+}
+
+.readMore p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-transform: none;
+    padding: 30px;
+    margin: 30px 0px 0px 30px;
+}
+
+.readMore .dark-grey a {
+    padding: 30px;
+    text-decoration: underline;
+    color: grey;
+    font-family: monsRegular;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+
+.readMore .medium-grey a {
+    padding: 30px;
+    text-decoration: underline;
+    color: grey;
+    font-family: monsRegular;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+
+.readMore .light-grey a {
+    padding: 30px;
+    text-decoration: underline;
+    color: grey;
+    font-family: monsRegular;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+
+@media (min-width: 992px) {
+    .sectionText {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+.btn-circle {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.btn-circle:focus,
+.btn-circle:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.fix-button {
+    display: block;
+    position: fixed;
+    bottom: -19px;
+    right: 10px;
+    z-index: 99;
+}
+
+.fix-button a {
+    font-size: 26px;
+    width: 57px;
+    height: 57px;
+    margin-bottom: 6px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.fix-button a i {
+    font-size: 35px;
+}
+
+.fix-button p {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: monsRegular;
+}
+
+.fix-button a:focus,
+.fix-button a:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content-section {
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.content-section img {
+    padding-bottom: 20px;
+}
+
+.content-section h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section p {
+    font-family: monsLight;
+    font-size: 8px;
+    font-weight: lighter;
+}
+
+.download-section {
+    color: white;
+    background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* .blackBlankSection {
+    background-color: black;
+    height: 100px;
+} */
+
+@media (min-width: 992px) {
+    .content-section {
+        margin-top: 150px;
+        padding-top: 100px;
+        background-color: black;
+        /* padding-top: 100px;
+        padding-bottom: 100px; */
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section .content {
+        padding-top: 20px;
+    }
+}
+
+navbar .btn {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-default {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #6a6a69;
+    background-color: #6a6a69;
+    border-radius: 0;
+}
+
+.btn-default:focus,
+.btn-default:hover {
+    color: black;
+    border: 1px solid #6a6a69;
+    outline: none;
+    background-color: #6a6a69;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+::-moz-selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: none;
+}
+
+::selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: none;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0 0 35px;
+    }
+}
+
+a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #42DCA3;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    /* color: #1d9b6c; */
+    color: white;
+}
+
+.sectionText {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 16px;
+    letter-spacing: 10px;
+    color: grey;
+}
+
+.hotels_Information {
+    padding-top: 20px;
+}
+
+.hotels_Information .imageContent {
+    margin: 0 auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+.hotels_Information .textContent {
+    background-color: #ffff;
+    height: auto;
+}
+
+.hotels_Information .textContent h6 {
+    letter-spacing: 5px;
+    color: black;
+}
+
+.hotels_Information .textContent p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: auto;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+.textContentBox {
+    padding: 50px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.dark-grey {
+    height: 60vh;
+    background-color: #1a1a1a;
+}
+
+.medium-grey {
+    height: 60vh;
+    background-color: #343434;
+}
+
+.light-grey {
+    height: 60vh;
+    background-color: #4e4d4e;
+}
+
+.readMore p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-transform: none;
+    padding: 30px;
+    margin: 30px 0px 0px 30px;
+}
+
+.readMore .dark-grey a {
+    padding: 30px;
+    text-decoration: underline;
+    color: grey;
+    font-family: monsRegular;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+
+.readMore .medium-grey a {
+    padding: 30px;
+    text-decoration: underline;
+    color: grey;
+    font-family: monsRegular;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+
+.readMore .light-grey a {
+    padding: 30px;
+    text-decoration: underline;
+    color: grey;
+    font-family: monsRegular;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10vh;
+}
+
+@media (min-width: 992px) {
+    .sectionText {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+.btn-circle {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.btn-circle:focus,
+.btn-circle:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.fix-button {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 99;
+}
+
+.fix-button a {
+    font-size: 26px;
+    width: 57px;
+    height: 57px;
+    margin-bottom: 6px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
+
+.fix-button a i {
+    font-size: 35px;
+}
+
+.fix-button p {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: monsRegular;
+}
+
+.fix-button a:focus,
+.fix-button a:hover {
+    color: white;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.content-section {
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.content-section img {
+    width: 110px;
+    padding-bottom: 12px;
+}
+
+.content-section h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.content-section p {
+    font-family: monsLight;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.download-section {
+    color: white;
+    background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* .blackBlankSection {
+    background-color: black;
+    height: 100px;
+} */
+
+@media (min-width: 992px) {
+    .content-section {
+        margin-top: 150px;
+        padding-top: 100px;
+        background-color: black;
+        /* padding-top: 100px;
+        padding-bottom: 100px; */
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section .content {
+        padding-top: 20px;
+    }
+}
+
+navbar .btn {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-default {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #6a6a69;
+    background-color: #6a6a69;
+    border-radius: 0;
+}
+
+.btn-default:focus,
+.btn-default:hover {
+    color: black;
+    border: 1px solid #6a6a69;
+    outline: none;
+    background-color: #6a6a69;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    background-color: #262627;
+    color: lightgray;
+    padding: 25px 0;
+    clear: both;
+}
+
+footer .container-fluid {}
+
+footer .container-fluid .center-row {
+    float: left;
+    width: 100%;
+}
+
+footer .container-fluid .center-row ul {
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+footer .container-fluid .center-row ul li {
+    list-style-type: none;
+    float: left;
+    width: 22%;
+    padding: 0px 6px;
+}
+
+footer .container-fluid .center-row ul li a {
+    font-size: 10px;
+}
+
+footer .container-fluid p,
+a {
+    font-family: monsLight;
+    color: lightgray;
+    margin: 0;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+::-moz-selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: none;
+}
+
+::selection {
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+    text-shadow: none;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
