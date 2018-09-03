@@ -62,14 +62,14 @@ p {
 }
 
 .main-padding {
-    padding-top: 80px;
+    padding-top: 62px;
     padding-bottom: 40px;
 }
 
 .gbtn {
     background: #6a6a69;
     padding: 10px 7px;
-    font-size: 11px;
+    font-size: 19px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -97,7 +97,7 @@ p {
     color: grey;
     /* color: #000; */
     letter-spacing: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 
@@ -234,7 +234,7 @@ p {
     float: left;
     width: 100%;
     margin: 0;
-    padding: 100px 525px;
+    padding: 50px 525px;
     list-style: none;
     color: white;
     font-weight: 900;
@@ -279,7 +279,7 @@ p {
     font-weight: normal;
     letter-spacing: 8px;
     color: lightgrey;
-    font-size: 12px;
+    font-size: 13px;
     /* margin: auto; */
     padding: 22px;
     /* margin-left: 6px; */
@@ -305,6 +305,18 @@ p {
 
 .main-menu .menu-items ul li:first-child {
     border-left: solid 1px #000;
+    position: relative;
+}
+
+.main-menu .menu-items ul li .dropdown-content {
+    position: absolute;
+    background-color: #2b2b2b;
+    display: none;
+}
+
+.main-menu .menu-items ul li .dropdown-content a.inner-a {
+    padding: 14px 56px !important;
+    border-top: 1px solid grey;
 }
 
 .main-menu .menu-items ul li a {
@@ -343,7 +355,7 @@ p {
 
 .main-menu .menu-items ul li.l-list a {
     background: #585859;
-    padding: 12px 25px;
+    padding: 13px 25px;
 }
 
 .main-menu .menu-items ul li.l-list a .top {
@@ -455,6 +467,7 @@ p {
     float: left;
     width: 100%;
     background-color: black;
+    display: none;
 }
 
 .discount-info ul {
@@ -559,16 +572,24 @@ p {
 .masthead .intro-body .intro-text {
     font-size: 40px;
     margin: 0;
-    padding: 90px 0px;
-    padding-top: 90px;
-    padding-bottom: 15px;
+    padding-top: 89px;
+    padding-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 24px;
+    font-weight: normal;
 }
 
 .masthead .intro-body img {
     padding-top: 116px;
 }
 
-.masthead .intro-body p {}
+.masthead .intro-body p {
+    font-family: monsRegular;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: grey;
+    font-weight: 900;
+}
 
 .masthead .intro-body a {
     float: left;
@@ -590,74 +611,229 @@ p {
     padding: 0;
 }
 
-.masthead2 {
-    display: table;
+.contact-form {
     width: 100%;
-    height: 150%;
-    padding: 0 0;
     text-align: center;
+    background-color: #ffffff;
+    font-family: monsRegular;
+    color: #5f6363;
+    padding-bottom: 50px;
+}
+
+.contact-form a:nth-child(1) {
+    color: #838d99;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.contact-form a:nth-child(2) {
+    color: #838d99;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.contact-form a:nth-child(3) {
+    color: #838d99;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.contact-form p {
+    color: #5f6363;
+    font-family: monsRegular;
+    font-size: 42px;
+    padding: 30px 0px;
+}
+
+.contact-form p u {
+    text-decoration: none;
+    border-bottom: 1px solid #5f6363;
+}
+
+.contact-form p.lead {
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 100px;
+    color: #838d99;
+    margin: 0;
+}
+
+.contact-form a.gbtn {
+    padding: 38px 54px;
     color: white;
+    background-color: #5f6363;
+}
+
+.contact-form a img {
+    width: 60px;
+    height: 60px;
+}
+
+.enquiry-form {
+    text-align: center;
+    font-family: monsRegular;
+    padding: 70px;
+}
+
+.enquiry-form p {
+    font-size: 34px;
+    padding: 15px 0px;
+    color: #5f6363;
+}
+
+.enquiry-form ul {
+    list-style: none;
+}
+
+.enquiry-form ul li {
+    border-color: transparent;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.enquiry-form ul li.check-class-li {}
+
+.enquiry-form ul li.li-submit {
+    text-align: center;
+}
+
+.enquiry-form ul li input {
+    width: 70%;
+    border-style: none;
+    padding: 18px;
+    margin: 0;
+}
+
+.enquiry-form ul li input.checkbox-class {}
+
+.enquiry-form ul li a.submit-button {}
+
+.enquiry-form ul li textarea {
+    border-color: transparent;
+    width: 70%;
+    padding: 18px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.enquiry-form input.message-input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.enquiry-form a button {
+    font-weight: 600;
+    padding: 16px 50px;
+    color: white;
+    background-color: #5f6363;
+    border-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.jumb-info {
     background-color: black;
-    background: url("../img/airport.png") no-repeat bottom center scroll;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    text-align: center;
+    padding: 100px;
 }
 
-.masthead2 .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-    float: left;
-    width: 100%;
+.jumb-info .text-info-box {
+    font-family: monsRegular;
 }
 
-.masthead2 .intro-body .intro-text {
-    font-size: 35px;
-    text-align: left;
+.jumb-info .text-info-box h3:nth-child(1) {
+    letter-spacing: 8px;
+}
+
+.jumb-info .text-info-box p:nth-child(2) {
     margin: 0;
-    float: left;
-    width: 30%;
-    padding-left: 80px;
-    padding-top: 80px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.masthead2 .intro-body .intro-text-2 {
-    font-size: 35px;
-    text-align: left;
+.jumb-info .text-info-box p:nth-child(3) {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.jumb-info .text-info-box p:nth-child(4) {
     margin: 0;
-    width: 60%;
-    padding-top: 115px;
-    padding-left: 200px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.masthead2 .intro-body img {
-    padding: 40px;
+.jumb-info .text-info-box p:nth-child(5) {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.masthead2 .intro-body p {}
-
-.masthead2 .intro-body a {
-    float: left;
-    width: 100%;
+.jumb-info .text-info-box p:nth-child(6) {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #98bcb8;
 }
 
-.masthead2 .intro-body a i {
-    position: absolute;
-    bottom: 8px;
-    color: white;
-    left: 47%;
+.jumb-info .text-info-box p a {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #98bcb8;
+    font-weight: 600;
 }
 
 #map {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 #map img {
     width: 100%;
     height: 100%;
+}
+
+.gallery-heading {}
+
+.gallery-heading h2 {
+    font-family: monsSemiBold;
+    color: #9c9f9f;
+    text-align: center;
+}
+
+.hotel-names {
+    text-align: center;
+}
+
+.hotel-names a {
+    color: #9c9f9f;
+    font-family: monsSemiBold;
+    text-decoration: underline;
+    padding: 0px 8px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.hotel-names a:hover {
+    color: #4c4e4e;
+    font-family: monsSemiBold;
+    text-decoration: underline;
+    padding: 0px 20px;
+    font-weight: 900;
+    font-size: 15px;
 }
 
 footer {
@@ -697,22 +873,6 @@ a {
     margin: 0;
 }
 
-
-/*Page under development*/
-
-.under-construction {
-    width: 100%;
-    height: auto;
-}
-
-.under-construction h3 {
-    font-family: monsRegular;
-    text-align: center;
-    color: black;
-    margin: 0;
-    padding: 65px 0px;
-}
-
 @media (max-width: 991px) {
     /* Heading */
     .main-menu {}
@@ -723,10 +883,16 @@ a {
     }
     .main-menu .logo h3 {
         padding: 16px 7px !important;
+        font-size: 12px;
     }
     .main-menu .menu-items {
         float: left !important;
         width: 100% !important;
+    }
+    .main-menu .menu-items ul li .dropdown-content {}
+    .main-menu .menu-items ul li .dropdown-content a.inner-a {
+        padding: 12px 29px !important;
+        border-top: 1px solid grey;
     }
     .main-menu .menu-items ul {}
     .main-menu .menu-items ul li {}
@@ -923,55 +1089,159 @@ a {
     .masthead .intro-body a img {
         padding: 0;
     }
-    .masthead2 {
-        display: table;
+    .contact-form {
         width: 100%;
-        height: 48% !important;
-        padding: 0 0;
         text-align: center;
-        color: white;
-        background-color: black;
-        background: url("../img/airport.png") no-repeat bottom center scroll;
-        position: relative;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background-color: #ffffff;
+        font-family: monsRegular;
+        color: #5f6363;
+        padding-bottom: 50px;
     }
-    .masthead2 .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        float: left;
-        width: 100%;
+    .contact-form a:nth-child(1) {
+        color: #838d99;
+        font-weight: 900;
+        text-decoration: underline;
     }
-    .masthead2 .intro-body .intro-text {
-        font-size: 35px;
-        text-align: center !important;
+    .contact-form a:nth-child(2) {
+        color: #838d99;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .contact-form a:nth-child(3) {
+        color: #838d99;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .contact-form p {
+        color: #5f6363;
+        font-family: monsRegular;
+        font-size: 42px;
+        padding: 30px 0px;
+    }
+    .contact-form p u {
+        text-decoration: none;
+        border-bottom: 1px solid #5f6363;
+    }
+    .contact-form p.lead {
+        font-size: 20px;
+        padding-top: 0;
+        padding-bottom: 100px;
+        color: #838d99;
         margin: 0;
-        float: left;
-        width: 100% !important;
-        padding-left: 0px !important;
-        padding-top: 80px;
     }
-    .masthead2 .intro-body .intro-text-2 {
-        font-size: 35px;
-        text-align: center !important;
-        width: 100% !important;
-        padding-top: 115px;
-        padding-left: 0px !important;
-    }
-    .masthead2 .intro-body img {
-        padding: 40px;
-    }
-    .masthead2 .intro-body p {}
-    .masthead2 .intro-body a {
-        float: left;
-        width: 100%;
-    }
-    .masthead2 .intro-body a i {
-        position: absolute;
+    .contact-form a.gbtn {
+        padding: 38px 54px;
         color: white;
-        left: 44%;
+        background-color: #5f6363;
+    }
+    .contact-form a img {
+        width: 60px;
+        height: 60px;
+    }
+    .enquiry-form {
+        text-align: center;
+        font-family: monsRegular;
+        padding: 70px;
+    }
+    .enquiry-form p {
+        font-size: 34px;
+        padding: 15px 0px;
+        color: #5f6363;
+    }
+    .enquiry-form ul {
+        list-style: none;
+    }
+    .enquiry-form ul li {
+        border-color: transparent;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .enquiry-form ul li.check-class-li {}
+    .enquiry-form ul li.li-submit {
+        text-align: center;
+    }
+    .enquiry-form ul li input {
+        width: 80%;
+        border-style: none;
+        padding: 18px;
+        margin: 0;
+    }
+    .enquiry-form ul li input.checkbox-class {}
+    .enquiry-form ul li a.submit-button {}
+    .enquiry-form ul li textarea {
+        border-color: transparent;
+        width: 80%;
+        padding: 18px;
+    }
+     ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        text-transform: uppercase;
+        padding-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .enquiry-form input.message-input::-webkit-input-placeholder {
+        text-transform: uppercase;
+        padding-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .enquiry-form a button {
+        font-weight: 600;
+        padding: 16px 50px;
+        color: white;
+        background-color: #5f6363;
+        border-style: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+    .jumb-info {
+        background-color: black;
+        text-align: center;
+        padding: 100px;
+    }
+    .jumb-info .text-info-box {
+        font-family: monsRegular;
+    }
+    .jumb-info .text-info-box h3:nth-child(1) {
+        letter-spacing: 8px;
+    }
+    .jumb-info .text-info-box p:nth-child(2) {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .jumb-info .text-info-box p:nth-child(3) {
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .jumb-info .text-info-box p:nth-child(4) {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .jumb-info .text-info-box p:nth-child(5) {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .jumb-info .text-info-box p:nth-child(6) {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #98bcb8;
+    }
+    .jumb-info .text-info-box p a {
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: #98bcb8;
+        font-weight: 600;
     }
     /*Maps*/
     #map {
@@ -981,6 +1251,20 @@ a {
     #map img {
         width: 100%;
         height: 100%;
+    }
+    .hotel-names {
+        text-align: center;
+    }
+    .hotel-names a {
+        color: #9c9f9f;
+        font-family: monsSemiBold;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+    .hotel-names a:hover {
+        color: #4c4e4e;
+        font-family: monsSemiBold;
+        text-decoration: underline;
     }
     .content-section {
         margin-top: 0px !important;
@@ -1275,59 +1559,163 @@ a {
     .masthead .intro-body a img {
         padding: 0;
     }
-    /* Master Header  */
-    .masthead2 {
-        display: table;
+    .contact-form {
         width: 100%;
-        height: 150%;
-        padding: 0 0;
         text-align: center;
+        background-color: #ffffff;
+        font-family: monsRegular;
+        color: #5f6363;
+        padding-bottom: 50px;
+    }
+    .contact-form a:nth-child(1) {
+        color: #838d99;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .contact-form a:nth-child(2) {
+        color: #838d99;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .contact-form a:nth-child(3) {
+        color: #838d99;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .contact-form p {
+        color: #5f6363;
+        font-family: monsRegular;
+        font-size: 30px;
+        padding: 30px 0px;
+    }
+    .contact-form p u {
+        text-decoration: none;
+        border-bottom: 1px solid #5f6363;
+    }
+    .contact-form p.lead {
+        font-size: 10px;
+        padding-top: 0;
+        padding-bottom: 44px;
+        color: #838d99;
+        margin: 0;
+    }
+    .contact-form a.gbtn {
+        padding: 18px 8px;
         color: white;
+        background-color: #5f6363;
+        font-size: 12px;
+    }
+    .contact-form a img {
+        width: 30px;
+        height: 30px;
+    }
+    .enquiry-form {
+        text-align: center;
+        font-family: monsRegular;
+        padding: 16px;
+    }
+    .enquiry-form p {
+        font-size: 26px;
+        padding: 15px 0px;
+        color: #5f6363;
+    }
+    .enquiry-form ul {
+        list-style: none;
+    }
+    .enquiry-form ul li {
+        border-color: transparent;
+        padding: 10px 0px;
+        text-align: left;
+    }
+    .enquiry-form ul li.check-class-li {}
+    .enquiry-form ul li.li-submit {
+        text-align: center;
+    }
+    .enquiry-form ul li input {
+        width: 85%;
+        border-style: none;
+        padding: 2px;
+        margin: 0;
+    }
+    .enquiry-form ul li input.checkbox-class {}
+    .enquiry-form ul li a.submit-button {}
+    .enquiry-form ul li textarea {
+        border-color: transparent;
+        width: 85%;
+        padding: 2px;
+    }
+     ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        text-transform: uppercase;
+        padding-left: 10px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .enquiry-form input.message-input::-webkit-input-placeholder {
+        text-transform: uppercase;
+        padding-left: 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .enquiry-form a button {
+        font-weight: 600;
+        padding: 11px 32px;
+        color: white;
+        background-color: #5f6363;
+        border-style: none;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 6px;
+    }
+    .jumb-info {
         background-color: black;
-        background: url("../img/airport.png") no-repeat bottom center scroll;
-        position: relative;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        text-align: center;
+        padding: 59px 0px;
     }
-    .masthead2 .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        float: left;
-        width: 100%;
+    .jumb-info .text-info-box {
+        font-family: monsRegular;
     }
-    .masthead2 .intro-body .intro-text {
-        font-size: 35px;
-        text-align: left;
+    .jumb-info .text-info-box h3:nth-child(1) {
+        letter-spacing: 8px;
+        font-size: 18px;
+    }
+    .jumb-info .text-info-box p:nth-child(2) {
         margin: 0;
-        float: left;
-        width: 30%;
-        padding-left: 80px;
-        padding-top: 80px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 600;
     }
-    .masthead2 .intro-body .intro-text-2 {
-        font-size: 35px;
-        text-align: left;
+    .jumb-info .text-info-box p:nth-child(3) {
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .jumb-info .text-info-box p:nth-child(4) {
         margin: 0;
-        width: 60%;
-        padding-top: 115px;
-        padding-left: 200px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 600;
     }
-    .masthead2 .intro-body img {
-        padding: 40px;
+    .jumb-info .text-info-box p:nth-child(5) {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 600;
     }
-    .masthead2 .intro-body p {}
-    .masthead2 .intro-body a {
-        float: left;
-        width: 100%;
+    .jumb-info .text-info-box p:nth-child(6) {
+        margin: 0;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #98bcb8;
     }
-    .masthead2 .intro-body a i {
-        position: absolute;
-        bottom: 10px;
-        left: 38%;
-        color: white;
+    .jumb-info .text-info-box p a {
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: #98bcb8;
+        font-weight: 600;
     }
+    /* Master Header  */
     /* Maps*/
     #map {
         width: 100%;
@@ -1336,6 +1724,23 @@ a {
     #map img {
         width: 100%;
         height: 100%;
+    }
+    .hotel-names {
+        text-align: center;
+        list-style: none;
+    }
+    .hotel-names a {
+        color: #9c9f9f;
+        font-family: monsSemiBold;
+        text-decoration: underline;
+        font-size: 14px;
+        display: list-item;
+        line-height: 40px;
+    }
+    .hotel-names a:hover {
+        color: #4c4e4e;
+        font-family: monsSemiBold;
+        text-decoration: underline;
     }
     .content-section {
         margin-top: 150px;
@@ -1439,7 +1844,7 @@ a:hover {
 
 .carousel {
     background-color: black;
-    padding: 70px 0px;
+    padding-top: 70px;
 }
 
 .carousel-indicators {
@@ -1470,6 +1875,19 @@ a:hover {
     border: 1px solid #fff;
     border-radius: 10px;
     margin: 0px 5px;
+}
+
+.news-offer {
+    background-color: black;
+    display: none;
+}
+
+.news-offer h2 {
+    padding: 60px;
+    font-family: monsSemiBold;
+    margin: 0;
+    color: #9c9f9f;
+    text-align: center;
 }
 
 .dark-grey {

@@ -1,31 +1,31 @@
 @font-face {
     font-family: monsBlack;
-    src: url("../customFonts/Montserrat-Black.ttf");
+    src: url("../../customFonts/Montserrat-Black.ttf");
 }
 
 @font-face {
     font-family: monsRegular;
-    src: url("../customFonts/Montserrat-Regular.ttf");
+    src: url("../../customFonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
     font-family: monsMedium;
-    src: url("../customFonts/Montserrat-Medium.ttf");
+    src: url("../../customFonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
     font-family: monsSemiBold;
-    src: url("../customFonts/Montserrat-SemiBold.ttf");
+    src: url("../../customFonts/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
     font-family: monsLight;
-    src: url("../customFonts/Montserrat-Light.ttf");
+    src: url("../../customFonts/Montserrat-Light.ttf");
 }
 
 @font-face {
     font-family: monsThin;
-    src: url("../customFonts/Montserrat-Thin.ttf");
+    src: url("../../customFonts/Montserrat-Thin.ttf");
 }
 
 body {
@@ -63,6 +63,7 @@ p {
 
 .main-padding {
     padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .gbtn {
@@ -74,8 +75,8 @@ p {
 }
 
 .gbtn img {
-    width: 21px;
-    height: 21px;
+    width: 40px;
+    height: 40px;
     margin-left: 15px;
 }
 
@@ -377,7 +378,7 @@ p {
 .hotel-info {}
 
 .hotel-info .container {
-    max-width: 1315px;
+    max-width: 1300px;
 }
 
 .hotel-info .single-hotel {
@@ -389,28 +390,31 @@ p {
 .hotel-info .single-hotel .h-image {
     float: left;
     width: 50%;
+    position: relative;
 }
 
 .hotel-info .single-hotel .h-image img {
     width: 100%;
-    height: 320px;
+    height: 400px;
+    filter: blur(1px);
 }
 
 .hotel-info .single-hotel .h-detail {
     color: #000;
     float: left;
     width: 50%;
-    padding: 42px 0px;
-    padding-left: 80px;
+    padding: 60px 0px;
+    padding-left: 65px;
     background: #fff;
-    height: 320px;
+    height: 400px;
 }
 
 .hotel-info .single-hotel .h-detail .h-title {
-    font-size: 20px;
-    font-family: monsSemiBold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    font-size: 38px;
+    font-family: monsRegular;
+    letter-spacing: 2px;
+    color: #5f6363;
+    font-weight: 600;
 }
 
 .hotel-info .single-hotel .h-detail .h-contact {
@@ -423,6 +427,7 @@ p {
 .hotel-info .single-hotel .h-detail .h-contact ul {
     padding: 0;
     margin: 0;
+    font-size: 20px;
 }
 
 .hotel-info .single-hotel .h-detail .h-contact ul li {
@@ -436,7 +441,7 @@ p {
 
 .hotel-info .single-hotel .h-detail .h-btns ul {
     padding: 0;
-    padding-top: 15px;
+    padding-top: 20px;
     margin-bottom: 0;
     float: left;
     width: 100%;
@@ -454,8 +459,8 @@ p {
     font-size: 12px;
     color: white;
     font-weight: bold;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 15px;
     padding-left: 30px;
 }
@@ -463,158 +468,6 @@ p {
 .hotel-info .single-hotel .h-detail .h-btns ul li a i {
     padding-left: 12px;
     font-size: 20px;
-}
-
-
-/*Booking Panel*/
-
-.container-booking-panel {
-    padding: 0px 79px;
-}
-
-.booking-panel {}
-
-.booking-panel .container {
-    max-width: 1300px;
-}
-
-.booking-panel ul {
-    list-style: none;
-    float: left;
-    width: 100%;
-    background-color: grey;
-    padding: 50px 350px;
-    margin: 50px 0px;
-}
-
-.booking-panel ul li:nth-child(1) {
-    float: left;
-    width: 25%;
-    text-align: right;
-    padding-right: 20px;
-}
-
-.booking-panel ul li {
-    float: left;
-    width: 35%;
-    text-align: center;
-}
-
-.booking-panel ul li:nth-child(2) {
-    float: left;
-    width: 40%;
-    text-align: center;
-    position: relative;
-}
-
-.booking-panel ul li .main-button {
-    width: 216px;
-    margin: auto;
-}
-
-.booking-panel ul li img {}
-
-.booking-panel ul li .available-button {
-    width: 145px;
-}
-
-.booking-panel ul li .available-button a {}
-
-.booking-panel ul li .available-button a .li-button {
-    background-color: black;
-    padding: 11px 0px;
-    width: 100%;
-    font-family: monsRegular;
-    font-size: 12px;
-    font-weight: 700;
-    border-style: none;
-    color: white;
-    cursor: pointer;
-}
-
-.booking-panel ul li a {
-    display: flex;
-}
-
-.booking-panel ul li a .dropdown-hotel {
-    background-color: white;
-    padding: 11px 0px;
-    width: 200px;
-    font-size: 12px;
-    color: grey;
-    font-family: monsRegular;
-    font-weight: 600;
-}
-
-.booking-panel ul li a .down-arrow {
-    background-color: black;
-    padding: 0px 10px;
-}
-
-.booking-panel ul li .dropdown-content {
-    width: 216px;
-    position: absolute;
-    display: none;
-}
-
-.booking-panel ul li .dropdown-content a {}
-
-.booking-panel ul li .dropdown-content a.inner-a {
-    padding: 10px 56px;
-    background-color: white;
-    border-top: 1px solid gray;
-    font-family: monsRegular;
-    color: grey;
-    font-weight: 900;
-}
-
-
-/* Discount info */
-
-.discount-info {
-    float: left;
-    width: 100%;
-    background-color: black;
-}
-
-.discount-info ul {
-    padding: 0;
-    margin: 0;
-    float: left;
-    width: 100%;
-}
-
-.discount-info ul li {
-    background: #585859;
-    float: left;
-    width: 33.3%;
-    list-style-type: none;
-    padding: 70px 40px;
-    padding-bottom: 50px;
-}
-
-.discount-info ul li::after {
-    clear: both;
-}
-
-.discount-info ul li.drk {
-    background: #1d1d1d;
-}
-
-.discount-info ul li.m-gray {
-    background: #2b2b2b;
-}
-
-.discount-info ul li p {
-    font-size: 30px;
-    margin-bottom: 125px;
-}
-
-.discount-info ul li a {
-    font-size: 13px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    letter-spacing: 2px;
 }
 
 
@@ -679,9 +532,11 @@ p {
 .masthead .intro-body .intro-text {
     font-size: 40px;
     margin: 0;
-    padding: 90px 0px;
-    padding-top: 90px;
-    padding-bottom: 15px;
+    padding-top: 89px;
+    padding-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 24px;
+    font-weight: normal;
 }
 
 .masthead .intro-body img {
@@ -689,7 +544,11 @@ p {
 }
 
 .masthead .intro-body p {
-    font-family: initial;
+    font-family: monsRegular;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: grey;
+    font-weight: 900;
 }
 
 .masthead .intro-body a {
@@ -706,82 +565,119 @@ p {
     text-decoration: underline;
     margin: 0;
     padding-bottom: 50px;
-    font-family: monsRegular;
 }
 
 .masthead .intro-body a img {
     padding: 0;
 }
 
-.masthead2 {
-    display: table;
+
+/*Rooms Page*/
+
+.rooms-page-info {
     width: 100%;
-    height: 150%;
-    padding: 0 0;
     text-align: center;
-    color: white;
-    background-color: black;
-    background: url("../img/airport.png") no-repeat bottom center scroll;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #ffffff;
+    font-family: monsRegular;
+    color: #5f6363;
+    padding: 50px 0px;
 }
 
-.masthead2 .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-    float: left;
-    width: 100%;
+.rooms-page-info a:nth-child(1) {
+    color: #838d99;
+    font-weight: 900;
+    font-size: 12px;
+    text-decoration: underline;
 }
 
-.masthead2 .intro-body .intro-text {
-    font-size: 35px;
-    text-align: left;
+.rooms-page-info a:nth-child(2) {
+    color: #838d99;
+    font-weight: 900;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.rooms-page-info a:nth-child(3) {
+    color: #838d99;
+    font-weight: 900;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.rooms-page-info p {
+    color: #5f6363;
+    font-family: monsRegular;
+    font-size: 42px;
+    padding: 30px 0px;
+}
+
+.rooms-page-info p u {
+    text-decoration: none;
+    border-bottom: 1px solid #5f6363;
+}
+
+.rooms-page-info p.lead {
+    font-size: 20px;
+    padding-top: 0;
+    color: #838d99;
     margin: 0;
-    float: left;
-    width: 30%;
-    padding-left: 80px;
-    padding-top: 80px;
 }
 
-.masthead2 .intro-body .intro-text-2 {
-    font-size: 35px;
+.rooms-page-info .hotel-spec-info {
+    float: left;
+    width: 100%;
+    padding: 0px 195px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+.rooms-page-info .hotel-spec-info .one {
+    width: 33.3%;
+    float: left;
+}
+
+.rooms-page-info .hotel-spec-info .one ul {}
+
+.rooms-page-info .hotel-spec-info .one ul li {
     text-align: left;
-    margin: 0;
-    width: 60%;
-    padding-top: 115px;
-    padding-left: 200px;
+    color: #838d99;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 28px;
 }
 
-.masthead2 .intro-body img {
-    padding: 40px;
+.rooms-page-info .hotel-spec-info .two ul {}
+
+.rooms-page-info .hotel-spec-info .two ul li {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #838d99;
+    line-height: 28px;
 }
 
-.masthead2 .intro-body p {}
+.rooms-page-info .hotel-spec-info .three ul {}
 
-.masthead2 .intro-body a {
+.rooms-page-info .hotel-spec-info .three ul li {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #838d99;
+    line-height: 28px;
+}
+
+.rooms-page-info .hotel-spec-info .two {
+    width: 33.3%;
     float: left;
-    width: 100%;
 }
 
-.masthead2 .intro-body a i {
-    position: absolute;
-    bottom: 8px;
-    color: white;
-    left: 47%;
+.rooms-page-info .hotel-spec-info .three {
+    width: 33.3%;
+    float: left;
 }
 
-#map {
-    width: 100%;
-    height: 80%;
-}
 
-#map img {
-    width: 100%;
-    height: 100%;
-}
+/*-----------*/
 
 .gallery-heading {}
 
@@ -897,13 +793,10 @@ a {
     .hotel-info {}
     .hotel-info .single-hotel {}
     .hotel-info .single-hotel .h-image {}
-    .hotel-info .single-hotel .h-image img {
-        height: 250px;
-    }
+    .hotel-info .single-hotel .h-image img {}
     .hotel-info .single-hotel .h-detail {
-        padding: 35px 0 !important;
-        padding-left: 25px !important;
-        height: 250px;
+        padding: 0px 0 !important;
+        padding-left: 10px !important;
     }
     .hotel-info .single-hotel .h-detail .h-title {
         font-size: 18px;
@@ -923,22 +816,6 @@ a {
     }
     .hotel-info .single-hotel .h-detail .h-btns ul li a i {}
     /* Discount info */
-    .discount-info {}
-    .discount-info ul {
-        float: left;
-        width: 100%;
-    }
-    .discount-info ul li {
-        padding: 50px 25px;
-        width: 33.3% !important;
-    }
-    .discount-info ul li.drk {}
-    .discount-info ul li.m-gray {}
-    .discount-info ul li p {
-        font-size: 26px;
-        margin-bottom: 70px;
-    }
-    .discount-info ul li a {}
     /*Short info*/
     .short-info {
         background-color: black;
@@ -1077,7 +954,7 @@ a {
         text-align: center;
         color: white;
         background-color: black;
-        background: url("../img/airport.png") no-repeat bottom center scroll;
+        background: url("../../img/airport.png") no-repeat bottom center scroll;
         position: relative;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1119,88 +996,6 @@ a {
         color: white;
         left: 44%;
     }
-    /*Booking Panel*/
-    .container-booking-panel {
-        padding: 0px 15px;
-    }
-    .booking-panel {}
-    .booking-panel .container {
-        max-width: 1300px;
-    }
-    .booking-panel ul {
-        list-style: none;
-        float: left;
-        width: 100%;
-        background-color: grey;
-        padding: 50px 66px;
-    }
-    .booking-panel ul li:nth-child(1) {
-        float: left;
-        width: 33.3%;
-        text-align: right;
-        padding-right: 20px;
-    }
-    .booking-panel ul li {
-        float: left;
-        width: 33.3%;
-        text-align: center;
-    }
-    .booking-panel ul li:nth-child(2) {
-        float: left;
-        width: 33.3%;
-        text-align: center;
-        position: relative;
-    }
-    .booking-panel ul li .main-button {}
-    .booking-panel ul li img {}
-    .booking-panel ul li a .li-button {
-        background-color: black;
-        padding: 10px 0px;
-        width: 150px;
-        font-family: monsRegular;
-        font-size: 14px;
-        font-weight: 700;
-    }
-    .booking-panel ul li a {
-        display: flex;
-        padding-left: 0;
-    }
-    .booking-panel ul li a .dropdown-hotel {
-        background-color: white;
-        padding: 10px 0px;
-        width: 150px;
-        font-size: 12px;
-        color: grey;
-        font-family: monsRegular;
-        font-weight: 600;
-    }
-    .booking-panel ul li a .down-arrow {
-        background-color: black;
-        padding: 0px 10px;
-    }
-    .booking-panel ul li .dropdown-content {
-        width: 192px;
-        position: absolute;
-        display: none;
-    }
-    .booking-panel ul li .dropdown-content a {}
-    .booking-panel ul li .dropdown-content a.inner-a {
-        padding: 10px 54px;
-        background-color: white;
-        border-top: 1px solid gray;
-        font-family: monsRegular;
-        color: grey;
-        font-weight: 900;
-    }
-    /*Maps*/
-    #map {
-        width: 100%;
-        height: 50%;
-    }
-    #map img {
-        width: 100%;
-        height: 100%;
-    }
     .hotel-names {
         text-align: center;
     }
@@ -1222,7 +1017,6 @@ a {
         background-color: black;
         /* padding-top: 50px;
         padding-bottom: 50px; */
-        clear: left;
     }
     .content-section img {
         padding-bottom: 20px;
@@ -1339,31 +1133,6 @@ a {
     .hotel-info .single-hotel .h-detail .h-btns ul li a {}
     .hotel-info .single-hotel .h-detail .h-btns ul li a i {}
     /* Discount info */
-    .discount-info {}
-    .discount-info ul {}
-    .discount-info ul li {
-        width: 100% !important;
-        float: left;
-        padding: 10px 10px;
-        margin-bottom: 20px;
-    }
-    .discount-info ul li.drk {
-        float: left;
-        width: 100% !important;
-        padding: 10px 10px;
-        margin-bottom: 20px;
-    }
-    .discount-info ul li.m-gray {
-        margin-bottom: 20px;
-        float: left;
-        width: 100% !important;
-        padding: 10px 10px;
-    }
-    .discount-info ul li p {
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-    .discount-info ul li a {}
     /* Short-info*/
     /*Short info*/
     .short-info {
@@ -1482,16 +1251,24 @@ a {
         vertical-align: middle;
     }
     .masthead .intro-body .intro-text {
-        font-size: 28px;
+        font-size: 40px;
         margin: 0;
-        padding: 90px 0px;
-        padding-top: 31px;
-        padding-bottom: 15px !important;
+        padding-top: 89px;
+        padding-bottom: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 24px;
+        font-weight: normal;
     }
     .masthead .intro-body img {
-        padding-top: 51px;
+        padding-top: 116px;
     }
-    .masthead .intro-body p {}
+    .masthead .intro-body p {
+        font-family: monsRegular;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: grey;
+        font-weight: 900;
+    }
     .masthead .intro-body a {
         float: left;
         width: 100%;
@@ -1504,7 +1281,7 @@ a {
         font-weight: 600;
         text-decoration: underline;
         margin: 0;
-        padding-bottom: 24px;
+        padding-bottom: 50px;
     }
     .masthead .intro-body a img {
         padding: 0;
@@ -1518,7 +1295,7 @@ a {
         text-align: center;
         color: white;
         background-color: black;
-        background: url("../img/airport.png") no-repeat bottom center scroll;
+        background: url("../../img/airport.png") no-repeat bottom center scroll;
         position: relative;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1561,94 +1338,6 @@ a {
         bottom: 10px;
         left: 38%;
         color: white;
-    }
-    /*Booking Panel*/
-    .container-booking-panel {
-        padding: 0px 15px;
-    }
-    .booking-panel {}
-    .booking-panel .container {
-        max-width: 1300px;
-    }
-    .booking-panel ul {
-        list-style: none;
-        float: left;
-        width: 100%;
-        background-color: grey;
-        padding: 50px 2px;
-    }
-    .booking-panel ul li:nth-child(1) {
-        float: left;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0px;
-    }
-    .booking-panel ul li {
-        float: left;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0px;
-    }
-    .booking-panel ul li:nth-child(2) {
-        float: left;
-        width: 100%;
-        text-align: center;
-        position: relative;
-        padding: 20px 143px;
-    }
-    .booking-panel ul li .main-button {
-        width: 50%;
-        margin: auto;
-    }
-    .booking-panel ul li img {
-        width: 100px;
-        height: 100px;
-    }
-    .booking-panel ul li a .li-button {
-        background-color: black;
-        padding: 10px 0px;
-        width: 150px;
-        margin: auto;
-        font-family: monsRegular;
-        font-size: 14px;
-        font-weight: 700;
-    }
-    .booking-panel ul li a {}
-    .booking-panel ul li a .dropdown-hotel {
-        background-color: white;
-        padding: 10px 0px;
-        width: 150px;
-        font-size: 12px;
-        color: grey;
-        font-family: monsRegular;
-        font-weight: 600;
-    }
-    .booking-panel ul li a .down-arrow {
-        background-color: black;
-        padding: 0px 10px;
-    }
-    .booking-panel ul li .dropdown-content {
-        width: 170px;
-        position: absolute;
-        display: none;
-    }
-    .booking-panel ul li .dropdown-content a {}
-    .booking-panel ul li .dropdown-content a.inner-a {
-        padding: 10px 40px;
-        background-color: white;
-        border-top: 1px solid gray;
-        font-family: monsRegular;
-        color: grey;
-        font-weight: 900;
-    }
-    /* Maps*/
-    #map {
-        width: 100%;
-        height: 35%;
-    }
-    #map img {
-        width: 100%;
-        height: 100%;
     }
     .hotel-names {
         text-align: center;
@@ -1756,64 +1445,6 @@ a:hover {
     height: auto;
 }
 
-.carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    vertical-align: top;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.carousel {
-    background-color: black;
-    padding-top: 70px;
-}
-
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 15%;
-    left: 0;
-    z-index: 15;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;
-    border-radius: 10px;
-    margin: 0px 5px;
-}
-
-.news-offer {
-    background-color: black;
-}
-
-.news-offer h2 {
-    padding: 60px;
-    font-family: monsSemiBold;
-    margin: 0;
-    color: #9c9f9f;
-    text-align: center;
-}
-
 .dark-grey {
     height: 60vh;
     background-color: #1a1a1a;
@@ -1896,7 +1527,7 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.fix-button {
+.fix-button-top {
     display: block;
     position: fixed;
     bottom: -19px;
@@ -1904,7 +1535,7 @@ a:hover {
     z-index: 99;
 }
 
-.fix-button a {
+.fix-button-top a {
     font-size: 26px;
     width: 57px;
     height: 57px;
@@ -1919,18 +1550,18 @@ a:hover {
     background: transparent;
 }
 
-.fix-button a i {
+.fix-button-top a i {
     font-size: 35px;
 }
 
-.fix-button p {
+.fix-button-top p {
     font-size: 9px;
     text-transform: uppercase;
     font-family: monsRegular;
 }
 
-.fix-button a:focus,
-.fix-button a:hover {
+.fix-button-top a:focus,
+.fix-button-top a:hover {
     color: white;
     outline: none;
     background: rgba(255, 255, 255, 0.1);
@@ -1965,7 +1596,7 @@ a:hover {
 
 .download-section {
     color: white;
-    background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+    background: url("../../img/downloads-bg.jpg") no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2211,14 +1842,20 @@ a:hover {
 
 .fix-button {
     display: block;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
-    right: 10px;
+    left: 20px;
     z-index: 99;
 }
 
+.fix-button img {
+    width: 70px !important;
+    height: 70px !important;
+    filter: blur(0px) !important;
+}
+
 .fix-button a {
-    font-size: 26px;
+    /* font-size: 26px;
     width: 57px;
     height: 57px;
     margin-bottom: 6px;
@@ -2229,17 +1866,15 @@ a:hover {
     color: white;
     border: 2px solid white;
     border-radius: 100% !important;
-    background: transparent;
-}
-
-.fix-button a i {
-    font-size: 35px;
+    background: transparent; */
 }
 
 .fix-button p {
-    font-size: 9px;
+    font-size: 10px;
     text-transform: uppercase;
     font-family: monsRegular;
+    display: inline-block;
+    color: white;
 }
 
 .fix-button a:focus,
@@ -2250,12 +1885,13 @@ a:hover {
 }
 
 .content-section {
-    margin-top: 150px;
+    margin-top: 0px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: black;
     /* padding-top: 50px;
     padding-bottom: 50px; */
+    clear: left;
 }
 
 .content-section img {
@@ -2279,7 +1915,7 @@ a:hover {
 
 .download-section {
     color: white;
-    background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
+    background: url("../../img/downloads-bg.jpg") no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2295,12 +1931,11 @@ a:hover {
 
 @media (min-width: 992px) {
     .content-section {
-        margin-top: 150px;
-        padding-top: 100px;
-        background-color: black;
+        /* margin-top: 150px; */
+        /* padding-top: 100px; */
+        /* background-color: black; */
         /* padding-top: 100px;
         padding-bottom: 100px; */
-        clear: left;
     }
 }
 

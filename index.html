@@ -20,7 +20,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
-    <script src="vendor/jQuery.js"></script>
+    <!--Lightbox Plugin css added in project-->
+    <link rel="stylesheet" href="vendor/lightbox.min.css">
+    <!-- <script src="vendor/jQuery.js"></script> -->
 
 </head>
 
@@ -41,22 +43,26 @@
                 <div class="menu-items">
                     <ul>
                         <li>
-                            <a href="#">Hotels <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><img src="img/logos/hotel-icon-white.png" alt=""></a>
+                            <a href="#!">Hotels <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><img
+                                    src="img/logos/hotel-icon-white.png" alt=""></a>
                             <div id="dropdownID" class="dropdown-content">
+                                <a href="index.html" class="inner-a">Main Website</a>
                                 <a href="" class="inner-a">KNIGHTSBRIDGE</a>
-                                <a href="londonCourt/index.html" class="inner-a">LONDON COURT</a>
+                                <a href="londonCourt/rooms.html" class="inner-a">LONDON COURT</a>
                                 <a href="" class="inner-a">EARLS COURT</a>
                                 <a href="" class="inner-a">ELEPHANT & CASTLE</a>
                                 <a href="" class="inner-a">KENSINGTON</a>
+
                             </div>
                         </li>
                         <li>
-                            <a href="#">CONTACT US <i><img src="img/logos/contact-icon-white.png" alt=""></i></a> </li>
+                            <a href="contactus.html">CONTACT US <i><img src="img/logos/contact-icon-white.png" alt=""></i></a>
+                        </li>
                         <li>
                             <a href="#">BOOK NOW <i><img src="img/logos/book-icon-white.png" alt=""></i></a>
                         </li>
                         <li id="menu-button" class="l-list">
-                            <a href="#">
+                            <a href="#!">
                                 <div class="top">
                                     menu
                                 </div>
@@ -130,7 +136,7 @@
                 <li><a href="index.html">Hotels</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="booknow.html">Book Now</a></li>
-                <li><a href="news.html">News & Offers</a></li>
+                <!-- <li><a href="news.html">News & Offers</a></li> -->
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contactus.html">Contact</a></li>
             </ul>
@@ -189,9 +195,6 @@
     <section class="masthead2">
         <div class="intro-body">
 
-
-
-
             <p class="intro-text">"The nicest Staff!</p>
             <br>
             <p class="intro-text-2">Lovely place to stay"</p>
@@ -201,13 +204,10 @@
                 <i class="fa fa-tripadvisor fa-5x"></i>
             </a>
 
-
-
-
         </div>
     </section>
     <!-- Hotel info -->
-    <div class="hotel-info main-padding">
+    <div id="hotel-info-ID" class="hotel-info main-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -234,10 +234,12 @@
                             <div class="h-btns">
                                 <ul>
                                     <li>
-                                        <a target="_blank" href="londonCourt/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png" alt=""></a>
+                                        <a target="_blank" href="londonCourt/rooms.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png"
+                                                alt=""></a>
                                     </li>
                                     <li>
-                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book now <img src="img/logos/book-icon-white.png" alt=""></a>
+                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book
+                                            now <img src="img/logos/book-icon-white.png" alt=""></a>
                                     </li>
 
                                 </ul>
@@ -262,10 +264,12 @@
                             <div class="h-btns">
                                 <ul>
                                     <li>
-                                        <a target="_blank" href="knightsbridge/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png" alt=""></a>
+                                        <a target="_blank" href="knightsbridge/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png"
+                                                alt=""></a>
                                     </li>
                                     <li>
-                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book now <img src="img/logos/book-icon-white.png" alt=""></a>
+                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book
+                                            now <img src="img/logos/book-icon-white.png" alt=""></a>
                                     </li>
                                 </ul>
                             </div>
@@ -288,10 +292,12 @@
                             <div class="h-btns">
                                 <ul>
                                     <li>
-                                        <a target="_blank" href="kensington/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png" alt=""></a>
+                                        <a target="_blank" href="kensington/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png"
+                                                alt=""></a>
                                     </li>
                                     <li>
-                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book now <img src="img/logos/book-icon-white.png" alt=""></a>
+                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book
+                                            now <img src="img/logos/book-icon-white.png" alt=""></a>
                                     </li>
                                 </ul>
                             </div>
@@ -315,10 +321,12 @@
                             <div class="h-btns">
                                 <ul>
                                     <li>
-                                        <a target="_blank" href="earlscourt/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png" alt=""></a>
+                                        <a target="_blank" href="earlscourt/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png"
+                                                alt=""></a>
                                     </li>
                                     <li>
-                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book now <img src="img/logos/book-icon-white.png" alt=""></a>
+                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book
+                                            now <img src="img/logos/book-icon-white.png" alt=""></a>
                                     </li>
                                 </ul>
                             </div>
@@ -342,10 +350,12 @@
                             <div class="h-btns">
                                 <ul>
                                     <li>
-                                        <a target="_blank" href="elephantcastle/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png" alt=""></a>
+                                        <a target="_blank" href="elephantcastle/index.html" class="gbtn">more info <img src="img/logos/hotel-icon-white.png"
+                                                alt=""></a>
                                     </li>
                                     <li>
-                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book now <img src="img/logos/book-icon-white.png" alt=""></a>
+                                        <a href="https://app.thebookingbutton.com/properties/londoncourtdirect" target="_blank" class="gbtn">book
+                                            now <img src="img/logos/book-icon-white.png" alt=""></a>
                                     </li>
                                 </ul>
                             </div>
@@ -353,6 +363,44 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container-booking-panel">
+        <div class="booking-panel">
+            <ul>
+                <li>
+                    <img src="img/logos/book-icon-white.png" alt="" width="50" height="50">
+
+
+                </li>
+                <li>
+                    <div class="main-button">
+                        <a href="#!" id="booking-button-ID">
+                            <div class="dropdown-hotel">Choose a hotel...</div>
+                            <div class="down-arrow"><i class="fa fa-4x fa-caret-down"></i></div>
+                        </a>
+                        <div id="booking-dropdown-ID" class="dropdown-content">
+                            <a href="#!" id="d1" class="inner-a">KNIGHTSBRIDGE</a>
+                            <a href="#!" id="d2" class="inner-a">LONDON COURT</a>
+                            <a href="#!" id="d3" class="inner-a">EARLS COURT</a>
+                            <a href="#!" id="d4" class="inner-a">ELEPHANT & CASTLE</a>
+                            <a href="#!" id="d5" class="inner-a">KENSINGTON</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="available-button">
+                        <a href="#!" id="check-avai-hyperlnk-ID">
+                            <button id="check-availablity-button-ID" class="li-button">Check Availability</button>
+                        </a>
+                    </div>
+
+
+                </li>
+
+            </ul>
         </div>
     </div>
 
@@ -523,7 +571,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js "></script>
+    <!-- <script src="vendor/jquery/jquery.min.js "></script> -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
@@ -536,6 +584,8 @@
     <!-- Custom scripts for this template -->
     <!-- <script src="js/grayscale.js "></script> -->
     <script src="vendor/jQuery.js"></script>
+    <!--lightbox plugin jQuery added-->
+    <script src="vendor/lightbox.min.js"></script>
 
     <!-- Code injected by live-server -->
     <script>
@@ -571,7 +621,7 @@
 
             // dropdown functionality
             var clicked = true;
-            $('.main-menu .menu-items ul li:first-child').on('click', function() {
+            $('.main-menu .menu-items ul li:first-child').on('click', function(event) {
 
                 if (clicked == true) {
                     $('#dropdownID').show(100);
@@ -601,6 +651,104 @@
 
             });
 
+
+            // dropdown selection and functionality
+
+
+            var clicked_booking = true;
+            $('#booking-button-ID').on('click', function(event) {
+
+                if (clicked_booking == true) {
+                    $('#booking-dropdown-ID').show(100);
+                    clicked_booking = false;
+                } else if (clicked_booking == false) {
+                    clicked_booking = true;
+                    $('#booking-dropdown-ID').hide(100);
+                }
+
+            });
+
+            $('#d1').on('click', function() {
+                clicked_booking = true;
+                var d_name = $('#d1').text();
+                $('.dropdown-hotel').replaceWith('<div class="dropdown-hotel">' + d_name + '</div>');
+                $('#booking-dropdown-ID').hide();
+            });
+            $('#d2').on('click', function() {
+
+                clicked_booking = true;
+                var d_name = $('#d2').text();
+                $('.dropdown-hotel').replaceWith('<div class="dropdown-hotel">' + d_name + '</div>');
+                $('#booking-dropdown-ID').hide();
+            });
+            $('#d3').on('click', function() {
+                clicked_booking = true;
+                var d_name = $('#d3').text();
+                $('.dropdown-hotel').replaceWith('<div class="dropdown-hotel">' + d_name + '</div>');
+                $('#booking-dropdown-ID').hide();
+            });
+            $('#d4').on('click', function() {
+                clicked_booking = true;
+                var d_name = $('#d4').text();
+                $('.dropdown-hotel').replaceWith('<div class="dropdown-hotel">' + d_name + '</div>');
+                $('#booking-dropdown-ID').hide();
+            });
+            $('#d5').on('click', function() {
+                clicked_booking = true;
+                var d_name = $('#d5').text();
+                $('.dropdown-hotel').replaceWith('<div class="dropdown-hotel">' + d_name + '</div>');
+                $('#booking-dropdown-ID').hide();
+            });
+
+
+            // check availablity functionality
+            $('#check-availablity-button-ID').on('click', function() {
+
+                var h_name = $('.dropdown-hotel').text();
+                var london_h = "https://app.thebookingbutton.com/properties/londoncourtdirect";
+                var knights_bridge_h = "https://app.thebookingbutton.com/properties/londoncourtdirect";
+                var earls_court_h = "https://app.thebookingbutton.com/properties/londoncourtdirect";
+                var elephant_castle_h = "https://app.thebookingbutton.com/properties/londoncourtdirect";
+                var kensington_h = "https://app.thebookingbutton.com/properties/londoncourtdirect";
+
+
+                if (h_name == 'LONDON COURT') {
+
+                    // setting multiple attr values on one selector
+                    $('#check-avai-hyperlnk-ID').attr({
+                        href: london_h,
+                        target: '_blank'
+                    });
+
+                } else if (h_name == 'KNIGHTSBRIDGE') {
+                    // setting multiple attr values on one selector
+                    $('#check-avai-hyperlnk-ID').attr({
+                        href: knights_bridge_h,
+                        target: '_blank'
+                    });
+
+                } else if (h_name == 'EARLS COURT') {
+                    // setting multiple attr values on one selector
+                    $('#check-avai-hyperlnk-ID').attr({
+                        href: earls_court_h,
+                        target: '_blank'
+                    });
+                } else if (h_name == 'ELEPHANT & CASTLE') {
+                    // setting multiple attr values on one selector
+                    $('#check-avai-hyperlnk-ID').attr({
+                        href: elephant_castle_h,
+                        target: '_blank'
+                    });
+                } else if (h_name == 'KENSINGTON') {
+                    // setting multiple attr values on one selector
+                    $('#check-avai-hyperlnk-ID').attr({
+                        href: kensington_h,
+                        target: '_blank'
+                    });
+                }
+
+
+            });
 
 
         });

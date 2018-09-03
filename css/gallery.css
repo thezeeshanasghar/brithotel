@@ -62,8 +62,7 @@ p {
 }
 
 .main-padding {
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 60px;
 }
 
 .gbtn {
@@ -97,7 +96,7 @@ p {
     color: grey;
     /* color: #000; */
     letter-spacing: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 
@@ -234,7 +233,7 @@ p {
     float: left;
     width: 100%;
     margin: 0;
-    padding: 100px 525px;
+    padding: 50px 525px;
     list-style: none;
     color: white;
     font-weight: 900;
@@ -279,7 +278,7 @@ p {
     font-weight: normal;
     letter-spacing: 8px;
     color: lightgrey;
-    font-size: 12px;
+    font-size: 13px;
     /* margin: auto; */
     padding: 22px;
     /* margin-left: 6px; */
@@ -305,6 +304,18 @@ p {
 
 .main-menu .menu-items ul li:first-child {
     border-left: solid 1px #000;
+    position: relative;
+}
+
+.main-menu .menu-items ul li .dropdown-content {
+    position: absolute;
+    background-color: #2b2b2b;
+    display: none;
+}
+
+.main-menu .menu-items ul li .dropdown-content a.inner-a {
+    padding: 14px 56px !important;
+    border-top: 1px solid grey;
 }
 
 .main-menu .menu-items ul li a {
@@ -343,7 +354,7 @@ p {
 
 .main-menu .menu-items ul li.l-list a {
     background: #585859;
-    padding: 12px 25px;
+    padding: 13px 25px;
 }
 
 .main-menu .menu-items ul li.l-list a .top {
@@ -363,89 +374,107 @@ p {
 
 /* Hotel Information */
 
-.hotel-info {}
 
-.hotel-info .single-hotel {
+/*Booking Panel*/
+
+.container-booking-panel {
+    padding: 0px 79px;
+}
+
+.booking-panel {}
+
+.booking-panel .container {
+    max-width: 1300px;
+}
+
+.booking-panel ul {
+    list-style: none;
     float: left;
     width: 100%;
-    margin-top: 30px;
+    background-color: grey;
+    padding: 50px 350px;
+    margin: 50px 0px;
 }
 
-.hotel-info .single-hotel .h-image {
+.booking-panel ul li:nth-child(1) {
     float: left;
-    width: 50%;
+    width: 25%;
+    text-align: right;
+    padding-right: 20px;
 }
 
-.hotel-info .single-hotel .h-image img {
-    width: 100%;
-}
-
-.hotel-info .single-hotel .h-detail {
-    color: #000;
+.booking-panel ul li {
     float: left;
-    width: 50%;
-    padding: 25px 0px;
-    padding-left: 50px;
-    background: #fff;
+    width: 35%;
 }
 
-.hotel-info .single-hotel .h-detail .h-title {
-    font-size: 20px;
-    font-family: monsSemiBold;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+.booking-panel ul li:nth-child(2) {
+    float: left;
+    width: 40%;
+    position: relative;
 }
 
-.hotel-info .single-hotel .h-detail .h-contact {
+.booking-panel ul li .main-button {
+    width: 216px;
+    margin: auto;
+}
+
+.booking-panel ul li img {}
+
+.booking-panel ul li .available-button {
+    width: 140px;
+}
+
+.booking-panel ul li .available-button a {}
+
+.booking-panel ul li .available-button a .li-button {
+    background-color: black;
+    padding: 11px 0px;
+    width: 140px;
     font-family: monsRegular;
-    color: #000;
-    margin: 18px 0;
-    color: grey;
-}
-
-.hotel-info .single-hotel .h-detail .h-contact ul {
-    padding: 0;
-    margin: 0;
-}
-
-.hotel-info .single-hotel .h-detail .h-contact ul li {
-    list-style-type: none;
-}
-
-.hotel-info .single-hotel .h-detail .h-btns {
-    float: left;
-    width: 100%;
-}
-
-.hotel-info .single-hotel .h-detail .h-btns ul {
-    padding: 0;
-    padding-top: 15px;
-    margin-bottom: 0;
-    float: left;
-    width: 100%;
-}
-
-.hotel-info .single-hotel .h-detail .h-btns ul li {
-    text-shadow: 0 0 black;
-    list-style-type: none;
-    float: left;
-    margin-right: 5px;
-}
-
-.hotel-info .single-hotel .h-detail .h-btns ul li a {
-    display: block;
     font-size: 12px;
+    font-weight: 700;
+    border-style: none;
     color: white;
-    font-weight: bold;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 30px;
+    cursor: pointer;
 }
 
-.hotel-info .single-hotel .h-detail .h-btns ul li a i {
-    padding-left: 12px;
-    font-size: 20px;
+.booking-panel ul li a {
+    display: flex;
+    padding: 0;
+}
+
+.booking-panel ul li a .dropdown-hotel {
+    background-color: white;
+    padding: 10px 0px;
+    padding-left: 10px;
+    width: 200px;
+    font-size: 12px;
+    color: grey;
+    font-family: monsRegular;
+    font-weight: 600;
+}
+
+.booking-panel ul li a .down-arrow {
+    background-color: black;
+    padding: 0px 8px;
+}
+
+.booking-panel ul li .dropdown-content {
+    width: 216px;
+    position: absolute;
+    display: none;
+}
+
+.booking-panel ul li .dropdown-content a {}
+
+.booking-panel ul li .dropdown-content a.inner-a {
+    padding: 10px 56px;
+    background-color: white;
+    border-top: 1px solid gray;
+    font-family: monsRegular;
+    color: grey;
+    font-weight: 900;
 }
 
 
@@ -455,6 +484,7 @@ p {
     float: left;
     width: 100%;
     background-color: black;
+    display: none;
 }
 
 .discount-info ul {
@@ -568,7 +598,9 @@ p {
     padding-top: 116px;
 }
 
-.masthead .intro-body p {}
+.masthead .intro-body p {
+    font-family: initial;
+}
 
 .masthead .intro-body a {
     float: left;
@@ -584,81 +616,252 @@ p {
     text-decoration: underline;
     margin: 0;
     padding-bottom: 50px;
+    font-family: monsRegular;
 }
 
 .masthead .intro-body a img {
     padding: 0;
 }
 
-.masthead2 {
-    display: table;
+.contact-form {
     width: 100%;
-    height: 150%;
-    padding: 0 0;
     text-align: center;
-    color: white;
-    background-color: black;
-    background: url("../img/airport.png") no-repeat bottom center scroll;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #ffffff;
+    font-family: monsRegular;
+    color: #5f6363;
+    padding: 30px 0px;
 }
 
-.masthead2 .intro-body {
-    display: table-cell;
-    vertical-align: middle;
+.contact-form a:nth-child(1) {
+    color: #838d99;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.contact-form a:nth-child(2) {
+    color: #838d99;
+    font-weight: 900;
+}
+
+.contact-form a:nth-child(3) {
+    color: #838d99;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.hotel-names {
+    text-align: center;
+    background-color: #ffff;
+    padding: 40px 0px;
+}
+
+.hotel-names a {
+    color: #5f6363;
+    font-family: monsSemiBold;
+    text-decoration: underline;
+    padding: 0px 8px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.hotel-names a:hover {
+    color: #4c4e4e;
+    font-family: monsSemiBold;
+    text-decoration: underline;
+    padding: 0px 20px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.main-gallery {}
+
+
+/*row 1*/
+
+.main-gallery .row-1 {
     float: left;
     width: 100%;
 }
 
-.masthead2 .intro-body .intro-text {
-    font-size: 35px;
-    text-align: left;
-    margin: 0;
+.main-gallery .row-1 .image-1 {
+    float: left;
+    width: 40%;
+    border: 2px solid white;
+}
+
+.main-gallery .row-1 .image-1 a {}
+
+.main-gallery .row-1 .image-1 a img {
+    width: 759px;
+    height: 500px;
+}
+
+.main-gallery .row-1 .image-2 {
     float: left;
     width: 30%;
-    padding-left: 80px;
-    padding-top: 80px;
+    border: 2px solid white;
 }
 
-.masthead2 .intro-body .intro-text-2 {
-    font-size: 35px;
-    text-align: left;
+.main-gallery .row-1 .image-2 a {}
+
+.main-gallery .row-1 .image-2 a img {
+    width: 567px;
+    height: 500px;
+}
+
+.main-gallery .row-1 .image-3 {
+    float: left;
+    width: 30%;
+}
+
+.main-gallery .row-1 .image-3 ul {
+    float: left;
+    list-style: none;
+    width: 100%;
     margin: 0;
-    width: 60%;
-    padding-top: 115px;
-    padding-left: 200px;
+    padding: 0;
 }
 
-.masthead2 .intro-body img {
-    padding: 40px;
+.main-gallery .row-1 .image-3 ul li {
+    border: 2px solid white;
 }
 
-.masthead2 .intro-body p {}
+.main-gallery .row-1 .image-3 ul li a {}
 
-.masthead2 .intro-body a {
+.main-gallery .row-1 .image-3 ul li a img {
+    width: 567px;
+    height: 248px;
+}
+
+
+/*row 2*/
+
+.main-gallery .row-2 {
     float: left;
     width: 100%;
 }
 
-.masthead2 .intro-body a i {
-    position: absolute;
-    bottom: 8px;
-    color: white;
-    left: 47%;
+.main-gallery .row-2 .image-1 {
+    float: left;
+    width: 40%;
+    border: 2px solid white;
 }
 
-#map {
-    width: 100%;
-    height: 100%;
+.main-gallery .row-2 .image-1 a {}
+
+.main-gallery .row-2 .image-1 a img {
+    width: 759px;
+    height: 500px;
 }
 
-#map img {
-    width: 100%;
-    height: 100%;
+.main-gallery .row-2 .image-2 {
+    float: left;
+    width: 30%;
+    border: 2px solid white;
 }
+
+.main-gallery .row-2 .image-2 a {}
+
+.main-gallery .row-2 .image-2 a img {
+    width: 567px;
+    height: 500px;
+}
+
+.main-gallery .row-2 .image-3 {
+    float: left;
+    width: 30%;
+}
+
+.main-gallery .row-2 .image-3 ul {
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-gallery .row-2 .image-3 ul li {
+    border: 2px solid white;
+}
+
+.main-gallery .row-2 .image-3 ul li a {}
+
+.main-gallery .row-2 .image-3 ul li a img {
+    width: 567px;
+    height: 248px;
+}
+
+
+/* row 3*/
+
+.main-gallery .row-3 {
+    float: left;
+    width: 100%;
+}
+
+.main-gallery .row-3 .image-1 {
+    float: left;
+    width: 40%;
+    border: 2px solid white;
+}
+
+.main-gallery .row-3 .image-1 a {}
+
+.main-gallery .row-3 .image-1 a img {
+    width: 759px;
+    height: 500px;
+}
+
+.main-gallery .row-3 .image-2 {
+    float: left;
+    width: 30%;
+    border: 2px solid white;
+}
+
+.main-gallery .row-3 .image-2 a {}
+
+.main-gallery .row-3 .image-2 a img {
+    width: 567px;
+    height: 500px;
+}
+
+.main-gallery .row-3 .image-3 {
+    float: left;
+    width: 30%;
+}
+
+.main-gallery .row-3 .image-3 ul {
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-gallery .row-3 .image-3 ul li {
+    border: 2px solid white;
+}
+
+.main-gallery .row-3 .image-3 ul li a {}
+
+.main-gallery .row-3 .image-3 ul li a img {
+    width: 567px;
+    height: 248px;
+}
+
+.main-gallery .row-4 {}
+
+.main-gallery .row-4 .image-1 {}
+
+.main-gallery .row-4 .image-1 a {}
+
+.main-gallery .row-4 .image-1 a img {
+    width: 100%;
+    height: 600px;
+}
+
+
+/*Footer*/
 
 footer {
     background-color: #262627;
@@ -697,22 +900,6 @@ a {
     margin: 0;
 }
 
-
-/*Page under development*/
-
-.under-construction {
-    width: 100%;
-    height: auto;
-}
-
-.under-construction h3 {
-    font-family: monsRegular;
-    text-align: center;
-    color: black;
-    margin: 0;
-    padding: 65px 0px;
-}
-
 @media (max-width: 991px) {
     /* Heading */
     .main-menu {}
@@ -723,10 +910,16 @@ a {
     }
     .main-menu .logo h3 {
         padding: 16px 7px !important;
+        font-size: 12px;
     }
     .main-menu .menu-items {
         float: left !important;
         width: 100% !important;
+    }
+    .main-menu .menu-items ul li .dropdown-content {}
+    .main-menu .menu-items ul li .dropdown-content a.inner-a {
+        padding: 12px 29px !important;
+        border-top: 1px solid grey;
     }
     .main-menu .menu-items ul {}
     .main-menu .menu-items ul li {}
@@ -750,32 +943,6 @@ a {
     .main-menu .menu-items ul li.l-list a .btm i {
         font-size: 19px;
     }
-    /* Hotel Information */
-    .hotel-info {}
-    .hotel-info .single-hotel {}
-    .hotel-info .single-hotel .h-image {}
-    .hotel-info .single-hotel .h-image img {}
-    .hotel-info .single-hotel .h-detail {
-        padding: 0px 0 !important;
-        padding-left: 10px !important;
-    }
-    .hotel-info .single-hotel .h-detail .h-title {
-        font-size: 18px;
-    }
-    .hotel-info .single-hotel .h-detail .h-contact {
-        margin: 7px 0 !important;
-    }
-    .hotel-info .single-hotel .h-detail .h-contact ul {}
-    .hotel-info .single-hotel .h-detail .h-contact ul li {
-        font-size: 14px;
-    }
-    .hotel-info .single-hotel .h-detail .h-btns {}
-    .hotel-info .single-hotel .h-detail .h-btns ul {}
-    .hotel-info .single-hotel .h-detail .h-btns ul li {}
-    .hotel-info .single-hotel .h-detail .h-btns ul li a {
-        padding: 6px 15px;
-    }
-    .hotel-info .single-hotel .h-detail .h-btns ul li a i {}
     /* Discount info */
     .discount-info {}
     .discount-info ul {
@@ -923,64 +1090,92 @@ a {
     .masthead .intro-body a img {
         padding: 0;
     }
-    .masthead2 {
-        display: table;
+    /*Booking Panel*/
+    .container-booking-panel {
+        padding: 0px 15px;
+    }
+    .booking-panel {}
+    .booking-panel .container {
+        max-width: 1300px;
+    }
+    .booking-panel ul {
+        list-style: none;
+        float: left;
         width: 100%;
-        height: 48% !important;
-        padding: 0 0;
+        background-color: grey;
+        padding: 50px 66px;
+    }
+    .booking-panel ul li:nth-child(1) {
+        float: left;
+        width: 33.3%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .booking-panel ul li {
+        float: left;
+        width: 33.3%;
         text-align: center;
-        color: white;
-        background-color: black;
-        background: url("../img/airport.png") no-repeat bottom center scroll;
+    }
+    .booking-panel ul li:nth-child(2) {
+        float: left;
+        width: 33.3%;
+        text-align: center;
         position: relative;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
     }
-    .masthead2 .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        float: left;
-        width: 100%;
+    .booking-panel ul li img {}
+    .booking-panel ul li a .li-button {
+        background-color: black;
+        padding: 10px 0px;
+        width: 150px;
+        font-family: monsRegular;
+        font-size: 14px;
+        font-weight: 700;
     }
-    .masthead2 .intro-body .intro-text {
-        font-size: 35px;
-        text-align: center !important;
-        margin: 0;
-        float: left;
-        width: 100% !important;
-        padding-left: 0px !important;
-        padding-top: 80px;
+    .booking-panel ul li a {
+        display: flex;
+        padding-left: 0;
     }
-    .masthead2 .intro-body .intro-text-2 {
-        font-size: 35px;
-        text-align: center !important;
-        width: 100% !important;
-        padding-top: 115px;
-        padding-left: 0px !important;
+    .booking-panel ul li a .dropdown-hotel {
+        background-color: white;
+        padding: 10px 0px;
+        width: 150px;
+        font-size: 12px;
+        color: grey;
+        font-family: monsRegular;
+        font-weight: 600;
     }
-    .masthead2 .intro-body img {
-        padding: 40px;
+    .booking-panel ul li a .down-arrow {
+        background-color: black;
+        padding: 0px 10px;
     }
-    .masthead2 .intro-body p {}
-    .masthead2 .intro-body a {
-        float: left;
-        width: 100%;
-    }
-    .masthead2 .intro-body a i {
+    .booking-panel ul li .dropdown-content {
+        width: 192px;
         position: absolute;
-        color: white;
-        left: 44%;
+        display: none;
     }
-    /*Maps*/
-    #map {
-        width: 100%;
-        height: 50%;
+    .booking-panel ul li .dropdown-content a {}
+    .booking-panel ul li .dropdown-content a.inner-a {
+        padding: 10px 54px;
+        background-color: white;
+        border-top: 1px solid gray;
+        font-family: monsRegular;
+        color: grey;
+        font-weight: 900;
     }
-    #map img {
-        width: 100%;
-        height: 100%;
+    /*Hotel Names*/
+    .hotel-names {
+        text-align: center;
+    }
+    .hotel-names a {
+        color: #9c9f9f;
+        font-family: monsSemiBold;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+    .hotel-names a:hover {
+        color: #4c4e4e;
+        font-family: monsSemiBold;
+        text-decoration: underline;
     }
     .content-section {
         margin-top: 0px !important;
@@ -989,6 +1184,7 @@ a {
         background-color: black;
         /* padding-top: 50px;
         padding-bottom: 50px; */
+        clear: left;
     }
     .content-section img {
         padding-bottom: 20px;
@@ -1084,26 +1280,6 @@ a {
         font-size: 30px;
     }
     .mobile-menu .b-menu ul li:hover i {}
-    /* Hotel Information */
-    .hotel-info {}
-    .hotel-info .single-hotel {}
-    .hotel-info .single-hotel .h-image {
-        width: 100%;
-    }
-    .hotel-info .single-hotel .h-image img {}
-    .hotel-info .single-hotel .h-detail {
-        width: 100%;
-        padding: 16px;
-    }
-    .hotel-info .single-hotel .h-detail .h-title {}
-    .hotel-info .single-hotel .h-detail .h-contact {}
-    .hotel-info .single-hotel .h-detail .h-contact ul {}
-    .hotel-info .single-hotel .h-detail .h-contact ul li {}
-    .hotel-info .single-hotel .h-detail .h-btns {}
-    .hotel-info .single-hotel .h-detail .h-btns ul {}
-    .hotel-info .single-hotel .h-detail .h-btns ul li {}
-    .hotel-info .single-hotel .h-detail .h-btns ul li a {}
-    .hotel-info .single-hotel .h-detail .h-btns ul li a i {}
     /* Discount info */
     .discount-info {}
     .discount-info ul {}
@@ -1276,66 +1452,102 @@ a {
         padding: 0;
     }
     /* Master Header  */
-    .masthead2 {
-        display: table;
+    /*Booking Panel*/
+    .container-booking-panel {
+        padding: 0px 15px;
+    }
+    .booking-panel {}
+    .booking-panel .container {
+        max-width: 1300px;
+    }
+    .booking-panel ul {
+        list-style: none;
+        float: left;
         width: 100%;
-        height: 150%;
-        padding: 0 0;
+        background-color: grey;
+        padding: 50px 2px;
+    }
+    .booking-panel ul li:nth-child(1) {
+        float: left;
+        width: 100%;
         text-align: center;
-        color: white;
-        background-color: black;
-        background: url("../img/airport.png") no-repeat bottom center scroll;
+        padding: 20px 0px;
+    }
+    .booking-panel ul li {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .booking-panel ul li:nth-child(2) {
+        float: left;
+        width: 100%;
+        text-align: center;
         position: relative;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        padding: 20px 0px;
     }
-    .masthead2 .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        float: left;
-        width: 100%;
+    .booking-panel ul li .main-button {
+        width: 50%;
+        margin: auto;
     }
-    .masthead2 .intro-body .intro-text {
-        font-size: 35px;
-        text-align: left;
-        margin: 0;
-        float: left;
-        width: 30%;
-        padding-left: 80px;
-        padding-top: 80px;
+    .booking-panel ul li img {
+        width: 100px;
+        height: 100px;
     }
-    .masthead2 .intro-body .intro-text-2 {
-        font-size: 35px;
-        text-align: left;
-        margin: 0;
-        width: 60%;
-        padding-top: 115px;
-        padding-left: 200px;
+    .booking-panel ul li a .li-button {
+        background-color: black;
+        padding: 10px 0px;
+        width: 150px;
+        margin: auto;
+        font-family: monsRegular;
+        font-size: 14px;
+        font-weight: 700;
     }
-    .masthead2 .intro-body img {
-        padding: 40px;
+    .booking-panel ul li a {}
+    .booking-panel ul li a .dropdown-hotel {
+        background-color: white;
+        padding: 10px 0px;
+        width: 150px;
+        font-size: 12px;
+        color: grey;
+        font-family: monsRegular;
+        font-weight: 600;
     }
-    .masthead2 .intro-body p {}
-    .masthead2 .intro-body a {
-        float: left;
-        width: 100%;
+    .booking-panel ul li a .down-arrow {
+        background-color: black;
+        padding: 0px 10px;
     }
-    .masthead2 .intro-body a i {
+    .booking-panel ul li .dropdown-content {
+        width: 170px;
         position: absolute;
-        bottom: 10px;
-        left: 38%;
-        color: white;
+        display: none;
     }
-    /* Maps*/
-    #map {
-        width: 100%;
-        height: 35%;
+    .booking-panel ul li .dropdown-content a {}
+    .booking-panel ul li .dropdown-content a.inner-a {
+        padding: 10px 40px;
+        background-color: white;
+        border-top: 1px solid gray;
+        font-family: monsRegular;
+        color: grey;
+        font-weight: 900;
     }
-    #map img {
-        width: 100%;
-        height: 100%;
+    /*Hotel Names*/
+    .hotel-names {
+        text-align: center;
+        list-style: none;
+    }
+    .hotel-names a {
+        color: #9c9f9f;
+        font-family: monsSemiBold;
+        text-decoration: underline;
+        font-size: 14px;
+        display: list-item;
+        line-height: 40px;
+    }
+    .hotel-names a:hover {
+        color: #4c4e4e;
+        font-family: monsSemiBold;
+        text-decoration: underline;
     }
     .content-section {
         margin-top: 150px;
@@ -1426,50 +1638,17 @@ a:hover {
     height: auto;
 }
 
-.carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    vertical-align: top;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.carousel {
+.news-offer {
     background-color: black;
-    padding: 70px 0px;
+    display: none;
 }
 
-.carousel-indicators {
-    position: absolute;
-    right: 0;
-    bottom: 15%;
-    left: 0;
-    z-index: 15;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
-    list-style: none;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #fff;
-    border-radius: 10px;
-    margin: 0px 5px;
+.news-offer h2 {
+    padding: 60px;
+    font-family: monsSemiBold;
+    margin: 0;
+    color: #9c9f9f;
+    text-align: center;
 }
 
 .dark-grey {
@@ -1958,6 +2137,7 @@ a:hover {
         background-color: black;
         /* padding-top: 100px;
         padding-bottom: 100px; */
+        clear: left;
     }
 }
 
