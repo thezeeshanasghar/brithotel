@@ -378,10 +378,15 @@ p {
 /*Booking Panel*/
 
 .container-booking-panel {
+    float: left;
+    width: 100%;
     padding: 0px 79px;
 }
 
-.booking-panel {}
+.booking-panel {
+    float: left;
+    width: 100%;
+}
 
 .booking-panel .container {
     max-width: 1300px;
@@ -673,6 +678,15 @@ p {
     font-size: 15px;
 }
 
+.hotel-names a:focus {
+    color: #4c4e4e;
+    font-family: monsSemiBold;
+    text-decoration: underline;
+    padding: 0px 20px;
+    font-weight: 900;
+    font-size: 15px;
+}
+
 .main-gallery {}
 
 
@@ -737,8 +751,8 @@ p {
 /*row 2*/
 
 .main-gallery .row-2 {
-    float: left;
-    width: 100%;
+    /* float: left; */
+    /* width: 100%; */
 }
 
 .main-gallery .row-2 .image-1 {
@@ -1201,6 +1215,50 @@ a {
         font-size: 8px;
         font-weight: lighter;
     }
+    .main-gallery {}
+    /*row 1*/
+    .main-gallery .row-1 {}
+    .main-gallery .row-1 .image-1 {}
+    .main-gallery .row-1 .image-1 a {}
+    .main-gallery .row-1 .image-1 a img {}
+    .main-gallery .row-1 .image-2 {}
+    .main-gallery .row-1 .image-2 a {}
+    .main-gallery .row-1 .image-2 a img {}
+    .main-gallery .row-1 .image-3 {}
+    .main-gallery .row-1 .image-3 ul {}
+    .main-gallery .row-1 .image-3 ul li {}
+    .main-gallery .row-1 .image-3 ul li a {}
+    .main-gallery .row-1 .image-3 ul li a img {}
+    /*row 2*/
+    .main-gallery .row-2 {}
+    .main-gallery .row-2 .image-1 {}
+    .main-gallery .row-2 .image-1 a {}
+    .main-gallery .row-2 .image-1 a img {}
+    .main-gallery .row-2 .image-2 {}
+    .main-gallery .row-2 .image-2 a {}
+    .main-gallery .row-2 .image-2 a img {}
+    .main-gallery .row-2 .image-3 {}
+    .main-gallery .row-2 .image-3 ul {}
+    .main-gallery .row-2 .image-3 ul li {}
+    .main-gallery .row-2 .image-3 ul li a {}
+    .main-gallery .row-2 .image-3 ul li a img {}
+    /* row 3*/
+    .main-gallery .row-3 {}
+    .main-gallery .row-3 .image-1 {}
+    .main-gallery .row-3 .image-1 a {}
+    .main-gallery .row-3 .image-1 a img {}
+    .main-gallery .row-3 .image-2 {}
+    .main-gallery .row-3 .image-2 a {}
+    .main-gallery .row-3 .image-2 a img {}
+    .main-gallery .row-3 .image-3 {}
+    .main-gallery .row-3 .image-3 ul {}
+    .main-gallery .row-3 .image-3 ul li {}
+    .main-gallery .row-3 .image-3 ul li a {}
+    .main-gallery .row-3 .image-3 ul li a img {}
+    .main-gallery .row-4 {}
+    .main-gallery .row-4 .image-1 {}
+    .main-gallery .row-4 .image-1 a {}
+    .main-gallery .row-4 .image-1 a img {}
 }
 
 @media (max-width: 767px) {
@@ -1572,6 +1630,52 @@ a {
         font-size: 8px;
         font-weight: lighter;
     }
+    .main-gallery {
+        display: none;
+    }
+    /*row 1*/
+    .main-gallery .row-1 {}
+    .main-gallery .row-1 .image-1 {}
+    .main-gallery .row-1 .image-1 a {}
+    .main-gallery .row-1 .image-1 a img {}
+    .main-gallery .row-1 .image-2 {}
+    .main-gallery .row-1 .image-2 a {}
+    .main-gallery .row-1 .image-2 a img {}
+    .main-gallery .row-1 .image-3 {}
+    .main-gallery .row-1 .image-3 ul {}
+    .main-gallery .row-1 .image-3 ul li {}
+    .main-gallery .row-1 .image-3 ul li a {}
+    .main-gallery .row-1 .image-3 ul li a img {}
+    /*row 2*/
+    .main-gallery .row-2 {}
+    .main-gallery .row-2 .image-1 {}
+    .main-gallery .row-2 .image-1 a {}
+    .main-gallery .row-2 .image-1 a img {}
+    .main-gallery .row-2 .image-2 {}
+    .main-gallery .row-2 .image-2 a {}
+    .main-gallery .row-2 .image-2 a img {}
+    .main-gallery .row-2 .image-3 {}
+    .main-gallery .row-2 .image-3 ul {}
+    .main-gallery .row-2 .image-3 ul li {}
+    .main-gallery .row-2 .image-3 ul li a {}
+    .main-gallery .row-2 .image-3 ul li a img {}
+    /* row 3*/
+    .main-gallery .row-3 {}
+    .main-gallery .row-3 .image-1 {}
+    .main-gallery .row-3 .image-1 a {}
+    .main-gallery .row-3 .image-1 a img {}
+    .main-gallery .row-3 .image-2 {}
+    .main-gallery .row-3 .image-2 a {}
+    .main-gallery .row-3 .image-2 a img {}
+    .main-gallery .row-3 .image-3 {}
+    .main-gallery .row-3 .image-3 ul {}
+    .main-gallery .row-3 .image-3 ul li {}
+    .main-gallery .row-3 .image-3 ul li a {}
+    .main-gallery .row-3 .image-3 ul li a img {}
+    .main-gallery .row-4 {}
+    .main-gallery .row-4 .image-1 {}
+    .main-gallery .row-4 .image-1 a {}
+    .main-gallery .row-4 .image-1 a img {}
 }
 
 @media (min-width: 768px) {
