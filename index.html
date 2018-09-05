@@ -59,7 +59,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="contactus.html#enquiry-ID">CONTACT US <i><img src="img/logos/contact-icon-white.png" alt=""></i></a>
+                            <a href="#">CONTACT US <i><img src="img/logos/contact-icon-white.png" alt=""></i></a>
                         </li>
                         <li>
                             <a href="#">BOOK NOW <i><img src="img/logos/book-icon-white.png" alt=""></i></a>
@@ -136,12 +136,12 @@
 
         <div class="overlay-content">
             <ul>
-                <li><a href="index.html">Hotels</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="booknow.html">Book Now</a></li>
-                <li><a href="news.html">Offers</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li class="hotel-info-ID-overlay"><a href="#">Hotels</a></li>
+                <li class="about-us-overlay"><a href="#">About Us</a></li>
+                <li class="hotel-info-ID-overlay"><a href="#">Book Now</a></li>
+                <li class="gallery-overlay"><a href="#">Gallery</a></li>
+                <li class="news-offer-overlay"><a href="#">Offers</a></li>
+                <li class="enquiry-form-overlay"><a href="#">Contact Us</a></li>
             </ul>
         </div>
         <!-- <footer class="overlay-footer">
@@ -408,7 +408,7 @@
     </div>
 
     <!-- About Section -->
-    <section id="about " class="content-section text-center ">
+    <section id="about" class="content-section text-center ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-4 col-md-4 col-sm-12 mx-auto content ">
@@ -437,9 +437,9 @@
     </div>
 
     <!-- <div class="blackBlankSection"></div> -->
-    <iframe src="gallery-only.html"  height="2300px" width="100%" style="overflow:auto"></iframe>
+    <iframe id="gallery" src="gallery-only.html"  height="2300px" width="100%" style="overflow:auto"></iframe>
 
-    <div class="news-offer">
+    <div id="news-offer" class="news-offer">
         <h2>Offers</h2>
     </div>
     <!-- discount info -->
@@ -487,6 +487,40 @@
 
     </div>
 
+
+    <div id="enquiry-form" class="enquiry-form">
+        <div class="container">
+            <p>Contact Us</p>
+            <ul>
+                <li>
+                    <input type="text" name="" id="" placeholder="First name">
+
+                </li>
+                <li>
+                    <input type="text" name="" id="" placeholder="surname">
+                </li>
+                <li>
+                    <input type="text" name="" id="" placeholder="email">
+                </li>
+                <li>
+                    <input type="text" name="" id="" placeholder="number">
+                </li>
+                <li>
+                    <textarea name="" id="" cols="10" rows="10" placeholder="message"></textarea>
+                </li>
+                <!-- <li class="check-class-li">
+                    <input class="checkbox-class" type="checkbox">
+
+                </li> -->
+                <li class="li-submit">
+                    <a href="" class="submit-button"><button>Submit</button></a>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </div>
     <!-- Footer -->
 
     <footer>
@@ -593,6 +627,49 @@
                 $('html,body').animate({
                     // grap scroll var and take it to required div using selector offest
                     scrollTop: $('.hotel-info').offset().top - 50
+                }, 1000)
+
+            });
+            
+            $('.hotel-info-ID-overlay').on('click', function() {
+                $('#overlayID').slideUp(300);
+                $('html,body').animate({
+                    // grap scroll var and take it to required div using selector offest
+                    scrollTop: $('.hotel-info').offset().top - 50
+                }, 1000)
+            });
+            $('.about-us-overlay').on('click', function() {
+                $('#overlayID').slideUp(300);
+                // $('html,body').animate({
+                //     // grap scroll var and take it to required div using selector offest
+                //     scrollTop: $('.hotel-info').offset().top - 50
+                // }, 1000)
+            });
+            $('.gallery-overlay').on('click', function() {
+                $('#overlayID').slideUp(300);
+                $('html,body').animate({
+                    // grap scroll var and take it to required div using selector offest
+                    scrollTop: $('#gallery').offset().top - 50
+                }, 1000)
+            });
+            $('.news-offer-overlay').on('click', function() {
+                $('#overlayID').slideUp(300);
+                $('html,body').animate({
+                    // grap scroll var and take it to required div using selector offest
+                    scrollTop: $('#news-offer').offset().top - 50
+                }, 1000)
+            });
+            $('.enquiry-form-overlay').on('click', function() {
+                $('#overlayID').slideUp(300);
+                $('html,body').animate({
+                    // grap scroll var and take it to required div using selector offest
+                    scrollTop: $('#enquiry-form').offset().top + 722
+                }, 1000)
+            });
+            $('.main-menu .menu-items ul li:nth-child(2)').on('click', function() {
+                $('html,body').animate({
+                    // grap scroll var and take it to required div using selector offest
+                    scrollTop: $('#enquiry-form').offset().top + 722
                 }, 1000)
 
             });

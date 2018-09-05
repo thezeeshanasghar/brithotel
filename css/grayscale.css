@@ -625,6 +625,7 @@ p {
     float: left;
     width: 100%;
     padding: 150px 256px;
+    margin-bottom: 50px;
 }
 
 .short-info .container ul {
@@ -2381,7 +2382,7 @@ footer .container-fluid .center-row ul {
 footer .container-fluid .center-row ul li {
     list-style-type: none;
     float: left;
-    width: 22%;
+    width: 23%;
     padding: 0px 6px;
 }
 
@@ -2416,4 +2417,84 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+.enquiry-form {
+    text-align: center;
+    font-family: monsRegular;
+    padding: 70px;
+}
+
+.enquiry-form p {
+    font-size: 34px;
+    padding: 15px 0px;
+    color: #5f6363;
+}
+
+.enquiry-form ul {
+    list-style: none;
+}
+
+.enquiry-form ul li {
+    border-color: transparent;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.enquiry-form ul li.check-class-li {}
+
+.enquiry-form ul li.li-submit {
+    text-align: center;
+}
+
+.enquiry-form ul li input {
+    width: 70%;
+    border-style: none;
+    padding: 18px;
+    margin: 0;
+}
+
+.enquiry-form ul li input.checkbox-class {}
+
+.enquiry-form ul li a.submit-button {}
+
+.enquiry-form ul li textarea {
+    border-color: transparent;
+    width: 70%;
+    padding: 18px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.enquiry-form input.message-input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.enquiry-form a button {
+    font-weight: 600;
+    padding: 16px 50px;
+    color: white;
+    background-color: #5f6363;
+    border-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
 }
